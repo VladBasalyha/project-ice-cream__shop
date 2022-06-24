@@ -1,0 +1,70 @@
+.contakts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.contakts-card {
+  padding: 40px 32px;
+  outline: 1px solid red;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  margin-bottom: 21px;
+  &:last-child {
+    margin-bottom: 32px;
+  }
+}
+
+.contacts__representation {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0 16px;
+  border-radius: 24px;
+  background-color: #f0d1a5;
+  width: max-content;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+  &--green {
+    background-color: #c2e297;
+  }
+}
+
+.contacts__sity {
+  margin: 0;
+  margin-bottom: 8px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+
+  letter-spacing: 0.04em;
+}
+.contacts__text {
+  margin: 0;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #e1e1e1;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+}
+
+.contacts__day {
+  margin: 0;
+}
+.contacts__time {
+  margin: 0;
+}
+.contacts__tel {
+  margin: 0;
+}
+.contacts__mail {
+  margin: 0;
+}
