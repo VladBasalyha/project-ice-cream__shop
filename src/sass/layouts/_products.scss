@@ -14,74 +14,82 @@ a{
 
 // ----------------------------
 
-.container{
-    // width: 320px;
-    padding-left: 15px;
+
+  .container{
+    width: 320px;
     padding-right: 15px;
-}
+    padding-left: 15px;
+  }
 
-.products{
+  .products{
     padding-top: 60px;
-    padding-bottom: 60px;    
-}
+    padding-bottom: 60px;
+  }
 
-.products__text{
+  .products__text{
     text-align: center;
-    // font-family: Titan One;
+    margin-bottom: 15px;
+    color: #FFA5BA;
     font-size: 18px;
     line-height: 1.15;
-    margin-bottom: 15px;
-   
-}
 
-.products__title{
+    font-weight: 400;
+  }
+
+  .products__title{
+    color: #D41443;
+        font-size: 34px;
+        line-height: 1.15;
     text-align: center;
-    // font-family: Titan One;
-    font-size: 34px;
-    line-height: 1.15;
-    margin-bottom: 157px;
-}
+    margin-bottom: 5px;
+  }
 
-.products__list{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.products__list-item{
-    width: 281px;
-   
-}
-
-.product__list-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .product__list-card{
+    text-align: center;
+    padding: 160px 40px 40px 40px;    
     border-radius: 24px;
-    padding-top: 160px;
-    padding-right:40px;
-    padding-left: 40px;
-    padding-bottom: 40px;
     
+  }
+
+  .product__list-card-title{
+    margin-bottom: 32px;
     
-}
+  }
 
-.product__list-card-title{
-    position: relative;
-}
+  .icon-group{
+    margin-bottom: 32px;
+  }
 
-.product__list-card-ice-cream{
-    background-color: #FFB8CA;
-}
+  .product__list-card-text{
+    margin-bottom: 32px;
+  }
 
-.product__list-card-ice-coffe{
+  .ice-cream{
+   background-color: #FFB8CA;
+
+  }
+
+  .ice-coffee{
     background-color: #F0D1A5;
-}
+  }
 
-.product__list-card-milkshakes{
+  .milkshakes{
     background-color: #C2E297;
-    
-}
+  }
 
+  .products__list-item{
+    margin-bottom: 130px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+  }
+
+  .products__list-item-icecream{
+    width: 280px;
+    height: 280px;
+    
+  }
+
+  
+
+  
