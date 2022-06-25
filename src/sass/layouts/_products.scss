@@ -1,0 +1,59 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, ol{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+// ----------------------------
+
+.container{
+    width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.products{
+    padding-top: 60px;
+    padding-bottom: 60px;    
+}
+
+.products__text{
+    text-align: center;
+    // font-family: Titan One;
+    font-size: 18px;
+    line-height: 1.15;
+    margin-bottom: 15px;
+   
+}
+
+.products__title{
+    text-align: center;
+    // font-family: Titan One;
+    font-size: 34px;
+    line-height: 1.15;
+    margin-bottom: 5px;
+}
+
+.products__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.products__list-item{
+    width: 281px;
+}
+
+.product__list-card{
+    border-radius: 24px;
+    
+}
