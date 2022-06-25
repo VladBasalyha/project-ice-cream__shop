@@ -1,0 +1,88 @@
+.gallery {
+    align-items: center;
+    min-width: 320px;
+    min-height: 136px;
+    background: linear-gradient(to bottom,
+            #FFF5F6 19.85%,
+            #FFFFFF 19.85%,
+            #FFFFFF 100%)
+}
+.gallery__h {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+}
+.gallery__grid {
+    display: grid;
+    max-width: auto;
+    grid-gap: 2.43px;
+    justify-content: center;
+    grid: repeat(21, 4.15px) / repeat(7, 43.86px);
+}
+
+.gallery__photo {
+    background-size: contain;
+    grid-area: auto;
+
+
+}
+
+.photo1 {
+    grid-area: 9 / 1 / span 7 / span 1;
+    background-image: url(/src/images/gallery-images/img1_43.59х43.86_mb.jpg);
+    border-radius: 8px;
+}
+
+.photo2 {
+    grid-area: 5 / 2 / span 7 / span 1;
+    background-image: url(/src/images/gallery-images/img2_43.59х43.86_mb.jpg);
+    border-radius: 8px;
+}
+
+.photo3 {
+    grid-area: 12 / 2 / span 7 / span 1;
+    background-image: url(/src/images/gallery-images/img3_43.59х43.86_mb.jpg);
+    border-radius: 8px;
+}
+
+.photo4 {
+    grid-area: 1 / 3 / span 14 / span 2;
+    background-image: url(/src/images/gallery-images/img4_89.4х89.61_mb.jpg);
+    border-radius: 8px;
+}
+
+.photo5 {
+    grid-area: 15 / 3 / span 7 / span 1;
+    background-image: url(/src/images/gallery-images/img5_43.59х43.86_mb.jpg);
+    border-radius: 8px;
+}
+
+.photo6 {
+    grid-area: 6 / 5 / span 7 / span 1;
+    background-image: url(/src/images/gallery-images/img6_43.59х43.86_mb.jpg);
+    border-radius: 8px;
+}
+
+.photo7 {
+    grid-area: 13 / 5 / span 7 / span 1;
+    background-image: url(/src/images/gallery-images/img7_43.59х43.86_mb.jpg);
+    border-radius: 8px;
+}
+
+.photo8 {
+    grid-area: 4 / 6 / span 7 / span 1;
+    background-image: url(/src/images/gallery-images/img8_43.59х43.86_mb.jpg);
+    border-radius: 8px;
+}
+
+.photo9 {
+    grid-area: 11 / 6 / span 7 / span 1;
+    background-image: url(/src/images/gallery-images/img9_43.59х43.86_mb.jpg);
+    border-radius: 8px;
+}
+
+.photo10 {
+    grid-area: 9/ 7 / span 7 / span 1;
+    background-image: url(/src/images/gallery-images/img10_43.59х43.86_mb.jpg);
+    border-radius: 8px;
+}
