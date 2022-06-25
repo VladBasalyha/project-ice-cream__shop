@@ -1,3 +1,7 @@
+.container {
+  padding: 30px;
+}
+
 .contakts-list {
   list-style: none;
   margin: 0;
@@ -9,8 +13,13 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   margin-bottom: 21px;
-  &:last-child {
-    margin-bottom: 32px;
+}
+.contacts__box {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 24px;
+  &.time {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
@@ -44,12 +53,9 @@
 
   letter-spacing: 0.04em;
 }
+
 .contacts__text {
   margin: 0;
-  padding-bottom: 24px;
-  margin-bottom: 24px;
-  border-bottom: 2px solid #e1e1e1;
-
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
@@ -58,13 +64,71 @@
 
 .contacts__day {
   margin: 0;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.8;
+
+  color: #000000;
 }
 .contacts__time {
   margin: 0;
+  margin-bottom: 8px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #ffa5ba;
+}
+
+.contacts__list {
+  display: block;
+  list-style: none;
+  margin: 0;
+
+  padding: 0;
+  padding-top: 24px;
 }
 .contacts__tel {
   margin: 0;
+  color: #907e82;
+  text-decoration: none;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
 }
 .contacts__mail {
   margin: 0;
+  color: #907e82;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.button__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.button__box {
+  background-color: #d41342;
+  border-radius: 22px;
+  padding: 8px 35px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.contacts__button--Locations {
+  text-decoration: none;
+}
+
+.contacts__button--Franchise {
+  text-decoration: none;
+  border-radius: 22px;
+  padding: 8px 35px;
 }
