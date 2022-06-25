@@ -2,12 +2,12 @@
 //   padding: 30px;
 // }
 
-.contakts-list {
+.contacts-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.contakts-card {
+.contacts-card {
   max-width: 281px;
 
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -18,7 +18,7 @@
   border-radius: 24px;
   margin-bottom: 21px;
 }
-.contakts__box {
+.contacts__box {
   border-bottom: 1px solid #e1e1e1;
   padding-bottom: 24px;
   &.time {
@@ -27,7 +27,7 @@
   }
 }
 
-.contakts__representation {
+.contacts__representation {
   margin: 0;
   margin-bottom: 20px;
   padding: 0 16px;
@@ -47,7 +47,7 @@
   }
 }
 
-.contakts__sity {
+.contacts__sity {
   margin: 0;
   margin-bottom: 8px;
 
@@ -58,7 +58,7 @@
   letter-spacing: 0.04em;
 }
 
-.contakts__text {
+.contacts__text {
   margin: 0;
   font-weight: 500;
   font-size: 12px;
@@ -66,7 +66,7 @@
   color: #907e82;
 }
 
-.contakts__day {
+.contacts__day {
   margin: 0;
 
   font-weight: 500;
@@ -75,7 +75,7 @@
 
   color: #000000;
 }
-.contakts__time {
+.contacts__time {
   margin: 0;
   margin-bottom: 8px;
   &:last-child {
@@ -88,7 +88,7 @@
   color: #ffa5ba;
 }
 
-.contakts__list {
+.contacts__list {
   display: block;
   list-style: none;
   margin: 0;
@@ -96,7 +96,7 @@
   padding: 0;
   padding-top: 24px;
 }
-.contakts__tel {
+.contacts__tel {
   margin: 0;
   color: #907e82;
   text-decoration: none;
@@ -105,7 +105,7 @@
   font-size: 12px;
   line-height: 1.5;
 }
-.contakts__mail {
+.contacts__mail {
   margin: 0;
   color: #907e82;
   text-decoration: none;
@@ -143,7 +143,7 @@
   border-radius: 22px;
   padding: 8px 35px;
 }
-.contakts__button--Locations {
+.contacts__button--Locations {
   text-decoration: none;
   color: #ffffff;
 
@@ -153,7 +153,7 @@
   line-height: 1.3;
 }
 
-.contakts__button--Franchise {
+.contacts__button--Franchise {
   text-decoration: none;
   color: #d41443;
 }
