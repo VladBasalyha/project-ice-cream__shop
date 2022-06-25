@@ -1,3 +1,21 @@
+.contacts {
+  background: linear-gradient(
+    to top,
+    #fff5f6 78.1%,
+    #ffffff 78.1%,
+    #ffffff 100%
+  );
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+    background: linear-gradient(to top, #fff5f6 58%, #ffffff 58%, #ffffff 100%);
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 120px;
+    background: linear-gradient(to top, #fff5f6 86%, #ffffff 86%, #ffffff 100%);
+  }
+}
+
 .cards__list {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -13,19 +31,20 @@
 }
 
 .contacts-card {
+  background-color: #fff;
   padding: 40px 32px;
   max-width: 281px;
 
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767.98px) {
     margin-right: 32px;
     &:last-child {
       margin-right: 0;
     }
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.98px) {
     margin-bottom: 21px;
     margin-left: auto;
     margin-right: auto;
@@ -124,16 +143,30 @@
   line-height: 1.5;
 }
 
+.button__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .button__box {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  margin-right: 12px;
+
+  @media screen and (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 10px;
+  }
 
   background-color: #d41342;
   max-width: 180px;
   border-radius: 22px;
   padding: 8px 35px;
-  margin-bottom: 10px;
+
   text-align: center;
 
   transition: box-shadow 250ms ease-in;
@@ -148,8 +181,6 @@
   position: relative;
   background-color: #fff;
   color: #d41443;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 0;
   text-align: center;
   max-width: 180px;
@@ -161,6 +192,12 @@
   &:hover,
   &:focus {
     box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
   }
 }
 .contacts__button--Locations {
