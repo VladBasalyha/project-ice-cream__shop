@@ -1,22 +1,35 @@
-// .container {
-//   padding: 30px;
-// }
-
-.contacts-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.cards__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 21px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
+
 .contacts-card {
+  padding: 40px 32px;
   max-width: 281px;
 
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-
   border-radius: 24px;
-  padding: 40px 32px;
 
-  border-radius: 24px;
-  margin-bottom: 21px;
+  @media screen and (min-width: 768px) {
+    margin-right: 32px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 21px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .contacts__box {
   border-bottom: 1px solid #e1e1e1;
@@ -28,12 +41,13 @@
 }
 
 .contacts__representation {
-  margin: 0;
+  width: max-content;
+
+  font-family: 'DM Sans', sans-serif;
   margin-bottom: 20px;
   padding: 0 16px;
   border-radius: 24px;
   background-color: #f0d1a5;
-  width: max-content;
 
   font-weight: 500;
   font-size: 16px;
@@ -48,7 +62,7 @@
 }
 
 .contacts__sity {
-  margin: 0;
+  font-family: 'DM Sans', sans-serif;
   margin-bottom: 8px;
 
   font-weight: 500;
@@ -59,7 +73,7 @@
 }
 
 .contacts__text {
-  margin: 0;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
@@ -67,8 +81,7 @@
 }
 
 .contacts__day {
-  margin: 0;
-
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.8;
@@ -76,6 +89,7 @@
   color: #000000;
 }
 .contacts__time {
+  font-family: 'DM Sans', sans-serif;
   margin: 0;
   margin-bottom: 8px;
   &:last-child {
@@ -90,37 +104,28 @@
 
 .contacts__list {
   display: block;
-  list-style: none;
-  margin: 0;
 
-  padding: 0;
   padding-top: 24px;
 }
 .contacts__tel {
+  font-family: 'DM Sans', sans-serif;
   margin: 0;
   color: #907e82;
-  text-decoration: none;
 
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
 }
 .contacts__mail {
-  margin: 0;
+  font-family: 'DM Sans', sans-serif;
   color: #907e82;
-  text-decoration: none;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
 }
-.button__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 10px;
-}
 
 .button__box {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
 
@@ -130,9 +135,17 @@
   padding: 8px 35px;
   margin-bottom: 10px;
   text-align: center;
+
+  transition: box-shadow 250ms ease-in;
+
+  &:hover,
+  &:focus {
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
 }
 
 .button__box-wite {
+  position: relative;
   background-color: #fff;
   color: #d41443;
   margin-left: auto;
@@ -142,9 +155,16 @@
   max-width: 180px;
   border-radius: 22px;
   padding: 8px 35px;
+
+  transition: box-shadow 250ms ease-in;
+
+  &:hover,
+  &:focus {
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
 }
 .contacts__button--Locations {
-  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
   color: #ffffff;
 
   font-weight: 700;
@@ -154,6 +174,26 @@
 }
 
 .contacts__button--Franchise {
-  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
   color: #d41443;
+}
+
+.icon-arrow--Locations {
+  position: absolute;
+  top: 10px;
+  right: auto;
+
+  fill: #ffffff;
+  width: 20px;
+  height: 25px;
+}
+
+.icon-arrow--Franchise {
+  position: absolute;
+  top: 10px;
+  right: auto;
+
+  fill: currentColor;
+  width: 20px;
+  height: 25px;
 }
