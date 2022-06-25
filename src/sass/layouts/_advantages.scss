@@ -1,0 +1,31 @@
+.advantages__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.advantages__item {
+  margin-bottom: 32px;
+}
+.advantages__item::before {
+  //   content: '';
+  display: inline-block;
+  //   width: ;
+  //   height: ;
+  //   background-image: ;
+  //   background-size: ;
+  background-repeat: no-repeat;
+}
+.advantages__number {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+.advantages__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 170%;
+  color: #000000;
+}
