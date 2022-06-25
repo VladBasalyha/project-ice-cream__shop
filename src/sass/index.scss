@@ -1,5 +1,12 @@
 @import './common';
 
+// Змінні
+@import './utils/reset';
+@import './utils/vars';
+
+// Глобальні налаштування стилів
+@import './layouts/global';
+
 // CSS файли для секцій сторінки
 @import './layouts/hero-header';
 @import './layouts/products';
