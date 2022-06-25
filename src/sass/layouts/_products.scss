@@ -39,7 +39,7 @@ a{
     // font-family: Titan One;
     font-size: 34px;
     line-height: 1.15;
-    margin-bottom: 5px;
+    margin-bottom: 157px;
 }
 
 .products__list{
@@ -67,3 +67,21 @@ a{
     
     
 }
+
+.product__list-card-title{
+    position: relative;
+}
+
+.product__list-card-ice-cream{
+    background-color: #FFB8CA;
+}
+
+.product__list-card-ice-coffe{
+    background-color: #F0D1A5;
+}
+
+.product__list-card-milkshakes{
+    background-color: #C2E297;
+    
+}
+
