@@ -3,13 +3,33 @@
   --dark-pinl-color: #d41443;
   --secondary-text-color: #000000;
   --primary-text-color: #907e82;
+  --about-bg-color: #fff5f6;
 }
 
-/* .about {
+.about__container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-.container {
-} */
+.about {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: var(--about-bg-color);
+
+  @media screen and (max-width: 767.9px) {
+    background-image: url('../images/images2/milkmob@1x.png');
+    background-repeat: no-repeat;
+    background-size: calc(100% - 40px);
+    background-position: left 20px  top 596px;
+  }
+
+    @media screen and (min-width: 346px) {
+      background-position: left 20px top 554px;
+    }
+}
 
 .about__label {
   font-family: 'Titan One';
@@ -32,7 +52,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--dark-pinl-color);
-  margin: 0;
+  margin-bottom: 32px;
 }
 
 .about img {
@@ -48,16 +68,46 @@
   color: var(--primary-text-color);
   margin-top: 0;
   margin-bottom: 40px;
-}
 
-.about__text:first-child {
+&:first-child {
   color: var(--secondary-text-color);
 }
 
-.about__text:nth-child(2) {
+&:nth-child(2) {
   margin-bottom: 10px;
 }
 
-.about__text:last-child {
+&:last-child {
   margin-bottom: 0;
 }
+}
+
+.about__picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+      width: auto;
+      height: 279px;
+      display: block;
+  }
+}
+
+.about__position{
+  @media screen and (min-width: 480px) and (max-width: 767.9px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+}
+
+.about__description{
+  @media screen and (max-width: 768px) {
+      padding-top: 40px;
+  }
+}
+
+  
+
