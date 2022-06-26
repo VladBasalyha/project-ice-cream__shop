@@ -1,4 +1,6 @@
 .contacts {
+  padding-bottom: 40px;
+
   background: linear-gradient(
     to top,
     #fff5f6 78.1%,
@@ -7,7 +9,6 @@
   );
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 60px;
     background: linear-gradient(to top, #fff5f6 58%, #ffffff 58%, #ffffff 100%);
   }
   @media screen and (min-width: 1280px) {
@@ -217,8 +218,8 @@
 
 .icon-arrow--Locations {
   position: absolute;
-  top: 10px;
-  right: auto;
+  top: 9px;
+  right: 10px;
 
   fill: #ffffff;
   width: 20px;
@@ -227,8 +228,11 @@
 
 .icon-arrow--Franchise {
   position: absolute;
-  top: 10px;
-  right: auto;
+
+  @media screen and (max-width: 768px) {
+    right: 30px;
+  }
+  right: 8px;
 
   fill: currentColor;
   width: 20px;
