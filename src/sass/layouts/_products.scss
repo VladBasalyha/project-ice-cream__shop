@@ -1,87 +1,100 @@
-body, h1, h2, h3, h4, h5, h6, p, ul, ol{
-    margin: 0;
-    padding: 0;
+.products {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-li{
-    list-style: none;
-
+.products__text {
+  text-align: center;
+  font-family: 'Titan One', sans-serif;
+  font-size: 18px;
+  line-height: 1.15;
+  margin-bottom: 15px;
+  color: #ffa5ba;
 }
 
-a{
-    text-decoration: none;
+.products__title {
+  text-align: center;
+  font-family: 'Titan One', sans-serif;
+  color: #d41443;
+  font-size: 34px;
+  line-height: 1.15;
+  margin-bottom: 157px;
 }
 
-// ----------------------------
-
-.container{
-    // width: 320px;
-    padding-left: 15px;
-    padding-right: 15px;
+.products__list {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
 }
 
-.products{
-    padding-top: 60px;
-    padding-bottom: 60px;    
+.products__list-item {
+  max-width: 281px;
+  margin-bottom: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.products__text{
-    text-align: center;
-    // font-family: Titan One;
-    font-size: 18px;
-    line-height: 1.15;
-    margin-bottom: 15px;
-   
+.product__list-card {
+  border-radius: 24px;
+  padding-top: 160px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
 }
 
-.products__title{
-    text-align: center;
-    // font-family: Titan One;
-    font-size: 34px;
-    line-height: 1.15;
-    margin-bottom: 157px;
+.product__img {
+  position: absolute;
+  width: 100%;
+  top: -160px;
+  left: 1px;
 }
 
-.products__list{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.product__list-card-title {
+  margin-bottom: 70px;
+
+  color: #ffffff;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+}
+.product__list-card-text {
+  margin-bottom: 32px;
+
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
 }
 
-.products__list-item{
-    width: 281px;
-   
+.product__list-card-btn {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  margin: auto;
+  border: none;
+}
+.product__svg {
+  fill: #d41443;
+}
+.product__list-card-ice-cream {
+  background-color: #ffb8ca;
 }
 
-.product__list-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 24px;
-    padding-top: 160px;
-    padding-right:40px;
-    padding-left: 40px;
-    padding-bottom: 40px;
-    
-    
+.product__list-card-ice-coffe {
+  background-color: #f0d1a5;
 }
 
-.product__list-card-title{
-    position: relative;
+.product__list-card-milkshakes {
+  background-color: #c2e297;
 }
-
-.product__list-card-ice-cream{
-    background-color: #FFB8CA;
-}
-
-.product__list-card-ice-coffe{
-    background-color: #F0D1A5;
-}
-
-.product__list-card-milkshakes{
-    background-color: #C2E297;
-    
-}
-
