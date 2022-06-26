@@ -1,0 +1,140 @@
+// colors
+$accentColor: #d41443;
+$subAccentColor: #ffa5ba;
+$backgroundColor: #ffb8ca;
+$productsBgColor: #e5e5e5;
+$footerBgColor: #fff5f6;
+$articleColor: #907e82;
+$whiteColor: #ffffff;
+$blackColor: #000000;
+
+// fonts
+$mainFont: 'DM Sans', sans-serif;
+$titleFont: 'Titan One', sans-serif;
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 400;
+
+    @media screen and (min-width: 320px) {
+        overflow-x: hidden;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $titleFont;
+    font-style: normal;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.footer {
+    background-color: $footerBgColor;
+
+    & .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    
+        @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: 768px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+        }
+    }
+
+    & .section {
+        padding: 0 20px;
+    
+        @media screen and (min-width: 768px) {
+            padding: 0 32px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            padding: 0 16px;
+        }
+    }
+
+    & .label {
+        font-family: $titleFont;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.17;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        color: $subAccentColor;
+    }
+
+    & .title {
+        font-size: 34px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        color: $accentColor;
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 40px;
+}
+
+.social-links .social-links__item+.social-links__item {
+    margin-left: 28px;
+}
+
+.footer-address {
+    font-style: normal;
+    text-align: right;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+    padding-bottom: 40px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #E1E1E1;
+
+    &__tel {
+        color: $accentColor;
+    }
+}
+
+.copyright {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+    text-align: center;
+    color: $articleColor;
+}
