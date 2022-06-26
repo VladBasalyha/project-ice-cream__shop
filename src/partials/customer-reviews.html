@@ -1,0 +1,97 @@
+<section class="customer-reviews">
+  <div class="container">
+    <picture>
+      <!-- Набір зображень для десктопних екранів -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/customer-reviews/customer-1_lg.webp    1x,
+          ./images/customer-reviews/customer-1_lg@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/customer-reviews/customer-1_lg.png    1x,
+          ./images/customer-reviews/customer-1_lg@2x.png 2x
+        "
+        type="image/png"
+      />
+
+      <!-- Набір зображень для планшетних екранів -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/customer-reviews/customer-1_md.webp    1x,
+          ./images/customer-reviews/customer-1_md@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/customer-reviews/customer-1_md.png    1x,
+          ./images/customer-reviews/customer-1_md@2x.png 2x
+        "
+        type="image/png"
+      />
+
+      <!-- Набір зображень для мобільних екранів -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/customer-reviews/customer-1_sm.webp    1x,
+          ./images/customer-reviews/customer-1_sm@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/customer-reviews/customer-1_sm.png    1x,
+          ./images/customer-reviews/customer-1_sm@2x.png 2x
+        "
+        type="image/png"
+      />
+
+      <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+      <img
+        class="customer-reviews__img"
+        src="./images/customer-reviews/customer-1.png"
+        alt="Emily, Los Angeles"
+        width="85"
+        height="85"
+        loading="lazy"
+      />
+    </picture>
+    <div class="customer-reviews__slider">
+      <p class="customer-reviews__text-review">
+        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
+        sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis
+        in nibh vel risus
+      </p>
+      <!-- <svg class="customer-reviews__quotes" width="54" height="40">
+        <use href="./images/sprite/sprite.svg#quotes"></use>
+      </svg> -->
+      <div class="customer-reviews__gradient"></div>
+    </div>
+    <svg class="customer-reviews__three-dots" width="32" height="4">
+      <use href="./images/sprite/sprite.svg#three-dots"></use>
+    </svg>
+    <p class="customer-reviews__name">Emily, Los Angeles</p>
+    <ul class="customer-reviews__marker">
+      <li class="customer-reviews__item">
+        <svg class="customer-reviews__home" width="12" height="12">
+          <use href="./images/sprite/sprite.svg#home"></use>
+        </svg>
+      </li>
+      <li class="customer-reviews__item">
+        <div class="customer-reviews__circle"></div>
+      </li>
+      <li class="customer-reviews__item">
+        <div class="customer-reviews__circle"></div>
+      </li>
+    </ul>
+  </div>
+</section>
