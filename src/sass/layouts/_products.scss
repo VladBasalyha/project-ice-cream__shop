@@ -1,33 +1,3 @@
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-// ----------------------------
-
-.container {
-  // width: 320px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .products {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -35,36 +5,41 @@ a {
 
 .products__text {
   text-align: center;
-  // font-family: Titan One;
+  font-family: 'Titan One', sans-serif;
   font-size: 18px;
   line-height: 1.15;
   margin-bottom: 15px;
+  color: #ffa5ba;
 }
 
 .products__title {
   text-align: center;
-  // font-family: Titan One;
+  font-family: 'Titan One', sans-serif;
+  color: #d41443;
   font-size: 34px;
   line-height: 1.15;
   margin-bottom: 157px;
 }
 
 .products__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
 }
 
 .products__list-item {
-  width: 281px;
+  max-width: 281px;
+  margin-bottom: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .product__list-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border-radius: 24px;
   padding-top: 160px;
   padding-right: 40px;
@@ -72,13 +47,46 @@ a {
   padding-bottom: 40px;
 }
 
-.prodct__img {
+.product__img {
+  position: absolute;
+  width: 100%;
+  top: -160px;
+  left: 1px;
 }
 
 .product__list-card-title {
-  position: relative;
+  margin-bottom: 70px;
+
+  color: #ffffff;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+}
+.product__list-card-text {
+  margin-bottom: 32px;
+
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
 }
 
+.product__list-card-btn {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  margin: auto;
+  border: none;
+}
+.product__svg {
+  fill: #d41443;
+}
 .product__list-card-ice-cream {
   background-color: #ffb8ca;
 }
