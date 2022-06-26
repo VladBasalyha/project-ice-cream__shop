@@ -1,4 +1,6 @@
 .contacts {
+  padding-bottom: 40px;
+
   background: linear-gradient(
     to top,
     #fff5f6 78.1%,
@@ -7,7 +9,6 @@
   );
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 60px;
     background: linear-gradient(to top, #fff5f6 58%, #ffffff 58%, #ffffff 100%);
   }
   @media screen and (min-width: 1280px) {
@@ -144,14 +145,20 @@
 }
 
 .button__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
   }
 }
 
 .button__box {
+  border: none;
   position: relative;
   margin-right: 12px;
 
@@ -163,7 +170,7 @@
   }
 
   background-color: #d41342;
-  max-width: 180px;
+  min-width: 180px;
   border-radius: 22px;
   padding: 8px 35px;
 
@@ -178,12 +185,13 @@
 }
 
 .button__box-wite {
+  border: none;
   position: relative;
   background-color: #fff;
   color: #d41443;
   margin-bottom: 0;
   text-align: center;
-  max-width: 180px;
+  min-width: 180px;
   border-radius: 22px;
   padding: 8px 35px;
 
@@ -217,8 +225,8 @@
 
 .icon-arrow--Locations {
   position: absolute;
-  top: 10px;
-  right: auto;
+  top: 9px;
+  right: 10px;
 
   fill: #ffffff;
   width: 20px;
@@ -227,8 +235,7 @@
 
 .icon-arrow--Franchise {
   position: absolute;
-  top: 10px;
-  right: auto;
+  right: 25px;
 
   fill: currentColor;
   width: 20px;
