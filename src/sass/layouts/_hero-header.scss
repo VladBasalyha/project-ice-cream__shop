@@ -1,0 +1,483 @@
+//Header Section
+.header__container {
+    display: flex;
+    border: none;
+}
+
+.header{
+    background-color: $backgroundColor;
+    border: none;
+
+    @include mq(desktop){
+        padding-top: 37px;
+    }
+
+    @include mq(not-desktop) {
+        padding-top: 32px;
+    }
+
+    @include mq(mobile-only) {
+        padding-top: 8px;
+    }
+}
+
+//Header Navigation
+.site-nav {
+    display: flex;
+    align-items: baseline;
+    align-items: center;
+    justify-content: left;
+    z-index: 10;
+}
+
+.site-nav__list {
+    display: flex;
+    margin-left: 128px;
+    @include mq(not-desktop){
+        display: none;
+    }
+}
+
+.site-nav__item {
+    margin-right: 35px;
+    &:nth-last-child(1) {margin-right: 0;} 
+}
+
+.site-nav__link {
+    text-decoration: none;
+    font-family: $mainFont;
+
+    @include fonts (700, 16px, 1.3, 0);
+
+    display: block;
+    color: $whiteColor;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.site-nav__link-acent {
+    color: $accentColor;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+//Hero Section
+.hero {
+    background-color: $backgroundColor;
+    border: none;
+
+    @include mq(mobile-only) {
+        overflow: hidden;
+    }
+}
+
+.hero__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+}
+
+//Header Buttons
+.header-button__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-left: auto; 
+}
+
+.header-button__item {
+    &:nth-child(2){
+        margin-left: 32px;
+    }
+
+    @include mq(desktop) {
+        &:nth-child(1){
+            display: none;
+        }
+    }
+
+    @include mq(mobile-only) {
+        &:nth-child(2){
+            display: none;
+        }
+    }
+}
+
+.mobile-button__open {
+    fill: currentColor;
+    border: none;
+    cursor: pointer;
+    background-color: $backgroundColor;}
+
+.mobile-button__icon {
+    width: 20px;
+    height: 1px;
+    background-color:  $accentColor;
+    margin-bottom: 6px;
+        &:nth-last-child(1) {
+            margin: 0;
+        }
+    }
+
+.header-button {
+    font-family: $mainFont;
+
+    @include fonts (700, 16px, 1.25, 0);
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 11px 37px;
+
+    color: $accentColor;
+
+    background: $whiteColor;
+    border: none;
+    border-radius: 22px;
+}
+
+.header-button__icon {
+    margin-left: 12px;
+    fill: currentColor;
+}
+
+//Hero Thumb
+.hero-thumb {
+    z-index: 5;
+    @include mq(desktop){
+        &:nth-child(1) {
+            margin-top: 60px;
+            margin-bottom: 108px;
+        }
+    
+        &:nth-child(2) {
+            margin-top: 65px;
+            margin-right: 18px;
+        }
+    
+        &:nth-child(3) {
+            margin-left: 213px;
+            margin-bottom: 84px;
+        }
+
+        &:nth-child(5) {
+            position: absolute;
+            left: 16px;
+            bottom: 60px;
+        }
+
+        &:nth-child(6) {
+            position: absolute;
+            left: 53%;
+            bottom: 0;
+        }
+
+        &:nth-child(7) {
+            position: absolute;
+            right: 16px;
+            bottom: 0;
+        }
+    }
+
+    @include mq(tablet-only){
+        &:nth-child(1) {
+            margin-top: 20px;
+            margin-bottom: 61px;
+        }
+    
+        &:nth-child(2) {
+            margin-top: 12px;
+            margin-right: 10px;
+        }
+    
+        &:nth-child(3) {
+            margin-left: 152px;
+            margin-bottom: 56px;
+        }
+
+        &:nth-child(5) {
+            position: absolute;
+            left: 32px;
+            bottom: 16px;
+        }
+
+        &:nth-child(6) {
+            position: absolute;
+            left: 42%;
+            bottom: 0;
+        }
+
+        &:nth-child(7) {
+            position: absolute;
+            right: 32px;
+            bottom: 0;
+        }
+    }
+
+    @include mq(mobile-only){
+        &:nth-child(1) {
+            margin-top: 136px;
+            margin-bottom: 158px;
+        }
+    
+        &:nth-child(2) {
+            display: none;
+        }
+    
+        &:nth-child(3) {
+            display: none;
+        }
+
+        &:nth-child(5) {
+            display: none;
+        }
+
+        &:nth-child(6) {
+            position: absolute;
+            left: 37%;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        &:nth-child(7) {
+            display: none;
+        }
+    }
+}
+
+//Hero Title
+.hero-title {
+    font-family: $titleFont;
+
+    @include fonts (400, null, 1.15, 0.04em);
+
+    text-transform: uppercase;
+    color: $whiteColor;
+    margin: 0;
+    
+        @include mq(desktop){
+            font-size: 38px;
+            margin-bottom: 24px;
+        }
+
+        @include mq(tablet-only) {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        @include mq(mobile-only) {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+}
+
+.hero-title__acent {
+    line-height: 0.97;
+    color: $accentColor;
+
+        @include mq(desktop){
+            font-size: 58px;
+        }
+
+        @include mq(tablet-only) {
+            font-size: 34px;
+        }
+
+        @include mq(mobile-only) {
+            font-size: 48px;
+        }  
+}
+
+//Hero Buttons
+.hero-button__list {
+    display: flex;
+}
+
+.hero-button__item {
+    &:nth-child(1) {
+        margin-right: 12px;
+    }
+
+    @include mq(not-desktop) {
+        &:nth-child(1) {
+            margin-right: 8px;
+        }
+    }
+}
+
+.hero-button {
+    padding: 7px 23px;
+
+    font-family: $mainFont;
+
+    @include fonts (400, 8px, 1.25, 0);
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    background-color: $whiteColor;
+    border: none;
+    border-radius: 12px;
+
+    color: $accentColor;
+    cursor: pointer;
+
+    @include mq(desktop) {
+        font-size: 14px;
+        padding: 11px 24px;
+        border-radius: 20px;
+    }
+
+}
+
+.hero-button__acent {
+    color: $whiteColor;
+    background-color: $accentColor;
+    }
+
+//Hero Right Thumb
+.hero-thumb__item {
+    @include mq(desktop){
+        &:nth-child(1){
+            margin-bottom: 18px;
+        }
+    }
+
+    @include mq(tablet-only){
+        &:nth-child(1){
+            margin-bottom: 17px;
+        }
+    }
+
+    @include mq(mobile-only){
+        display: none;
+    }
+}
+
+.hero-thumb__title {
+    position: relative;
+    font-family: $titleFont;
+
+    @include fonts (400, null, 1.15, 0.04em);
+    
+    text-transform: uppercase;
+    text-align: right;
+    color: $accentColor;
+    z-index: 2;
+    
+    @include mq(desktop){
+        font-size: 46px;
+        margin-bottom: 2px;
+    }
+
+    @include mq(tablet-only){
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+}
+
+.hero-thumb__text {
+    font-family: $mainFont;
+
+    @include fonts (400, null, 1.29, 0);
+
+    text-align: right;
+    color: $whiteColor;
+
+    @include mq(desktop){
+        font-size: 14px;
+    }
+
+    @include mq(tablet-only){
+        font-size: 8px;
+    }
+}
+
+.hero-thumb-title__icon {
+    fill: currentColor;
+    color: $whiteColor;
+    position: absolute;
+    top: -4px;
+    right: -18px;
+    z-index: -1;
+
+    @include mq(tablet-only){
+        width: 18px;
+        height: 18px;
+        top: -3px;
+        right: -10px;
+    }
+
+}
+
+//Hero Bottom Thumb
+.hero-thumb__paragraph {
+    font-family: $mainFont;
+    font-weight: 400;
+    color: $whiteColor;
+
+    @include mq(desktop) {
+        margin-bottom: 20px;
+        width: 200px;
+        font-size: 14px;
+    }
+
+    @include mq(tablet-only) {
+        margin-bottom: 7px;
+        width: 114px;
+        font-size: 8px;
+    }
+}
+
+.hero-thumb__link {
+    cursor: pointer;
+}
+
+.hero-thumb__icon {
+    fill: currentColor;
+    border-radius: 13px;
+    border: solid 8px $whiteColor;
+    background-color: $whiteColor;
+    color: $accentColor;
+
+    @include mq(tablet-only) {
+        border-radius: 9px;
+        border: solid 5px $whiteColor;
+        width: 18px;
+        height: 18px;
+    }
+}
+
+//Hero Images
+.hero__icon {
+    position: absolute;
+    border-radius: 50%;
+    background-color: $subAccentColor;
+    z-index: 0;
+
+    @include mq(desktop){
+        bottom: 76px;
+        left: 40%;
+        width: 534px;
+        height: 534px;
+    }
+
+    @include mq(tablet-only){
+        bottom: 40px;
+        left: 32%;
+        width: 335px;
+        height: 333px;
+    }
+
+    @include mq(mobile-only){
+        bottom: 75px;
+        left: 11%;
+        width: 346px;
+        height: 344px;
+    }
+}
