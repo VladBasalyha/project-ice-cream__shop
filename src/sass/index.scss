@@ -1,5 +1,11 @@
 @import './common';
 
+@import './utils/vars';
+@import './utils/reset';
+@import './utils/mixins';
+
+@import './utils/container';
+
 // CSS файли для секцій сторінки
 @import './layouts/hero-header';
 @import './layouts/products';
@@ -9,9 +15,3 @@
 @import './layouts/gallery';
 @import './layouts/contacts';
 @import './layouts/footer';
-// container
-
-@import './utils/container';
-@import './utils/mixins';
-@import './utils/reset';
-@import './utils/vars';

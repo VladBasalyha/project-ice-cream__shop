@@ -14,6 +14,10 @@
     padding-bottom: 120px;
     background: linear-gradient(to top, #fff5f6 86%, #ffffff 86%, #ffffff 100%);
   }
+
+  & .container {
+    padding-bottom: 40px;
+  }
 }
 
 .cards__list {
@@ -197,7 +201,7 @@
   @media screen and (max-width: 768px) {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
   }
 }
 .contacts__button--Locations {
