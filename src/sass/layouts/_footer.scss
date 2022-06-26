@@ -1,16 +1,32 @@
 .footer {
     // vertical-align: bottom;    
     background-color: $footerBgColor;
-    &.container {
-        display: flex;
-        align-content: end;
+
+    // &.container {
+    //     width: 100vw;
+    //     height: 100vh;
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     align-content: stretch;
+    // }
+
+    & .label {
+            margin-bottom: 16px;
+        }
+
+    & .title {
+        margin-bottom: 40px;
     }
 }
 
 .social-links {
     display: flex;
     justify-content: end;
+    margin-bottom: 40px;
+}
 
+.social-links .social-links__item + .social-links__item {
+    margin-left: 28px;
 }
 
 .footer-address {
@@ -19,6 +35,8 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 186%;
+    padding-bottom: 40px;
+    margin-bottom: 16px;
     border-bottom: 1px solid #E1E1E1;
     &__tel {
         color: $accentColor;
