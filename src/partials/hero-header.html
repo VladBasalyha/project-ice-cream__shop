@@ -1,1 +1,138 @@
+<!-- Header Section -->
+<header class="header">
+    <div class="container header__container">
+        <nav class="site-nav">
+            <a href="./" class="logo">
+                <svg class="logo__icon" width="199px" height="50px">
+                <use xlink:href="/src/images/sprite/sprite.svg#icon-logo"></use>
+              </svg></a>
+              <ul class="site-nav__list">
+                <li class="site-nav__item"><a class="site-nav__link site-nav__link-acent" href="">Home</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="">About us</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="">How it's made?</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="">Our products</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="">Contact</a></li>
+              </ul>
+        </nav>
+        <ul class="header-button__list">
+          <li class="header-button__item"><button data-mobile-open type="button" class="mobile-button__open">
+            <div class="mobile-button__icon"></div>
+            <div class="mobile-button__icon"></div>
+            <div class="mobile-button__icon"></div>
+          </button></li>
+          <li class="header-button__item"><button class="header-button">Buy now
+            <svg class="header-button__icon" width="10px" height="20px">
+            <use xlink:href="/src/images/sprite/sprite.svg#icon-button"></use>
+          </svg>
+        </button></li>
+        </ul>
+      </div>
+    </header>
+<!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero-thumb">
+          <h1 class="hero-title">ice cream<br>made with<br><span class="hero-title__acent">passion</span></h1>
+            <ul class="hero-button__list">
+                <li class="hero-button__item"><button class="hero-button hero-button__acent">Products</button></li>
+                <li class="hero-button__item"><button class="hero-button">How it's made?</button></li>
+            </ul>
+        </div>
 
+        <div class="hero-thumb">
+          <ul class="thumb__list">
+            <li class="hero-thumb__item">
+              <p class="hero-thumb__title">16
+                <svg class="hero-thumb-title__icon" width="30px" height="30px">
+                  <use xlink:href="/src/images/sprite/sprite.svg#icon-circle"></use>
+                </svg>
+              </p>
+              <p class="hero-thumb__text">cafes</p>
+            </li>
+
+            <li class="hero-thumb__item">
+              <p class="hero-thumb__title">23
+                <svg class="hero-thumb-title__icon" width="30px" height="30px">
+                  <use xlink:href="/src/images/sprite/sprite.svg#icon-circle"></use>
+                </svg></p>
+              <p class="hero-thumb__text">food trucks</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-thumb"> 
+          <p class="hero-thumb__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            <a class="hero-thumb__link">
+              <svg class="hero-thumb__icon" width="26px" height="26px">
+                <use xlink:href="/src/images/sprite/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+        </div>
+        <div class="hero__icon"></div>
+
+        <div class="hero-thumb">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="/src/images/hero-header/image-1_dt.png 1x, 
+                      /src/images/hero-header/image-1_dt@2x.png 2x"
+              type="image/png"
+              />
+            <source
+              media="(min-width: 768px)"
+              srcset="/src/images/hero-header/image-1_tb.png 1x, 
+                    /src/images/hero-header/image-1_tb@2x.png 2x"
+              type="image/png"
+            />
+            <img src="/src/images/hero-header/image-1_dt.png" alt="designer" width="" loading="lazy" />
+          </picture>
+        </div>
+
+        <div class="hero-thumb">
+          <picture>
+            <source
+            media="(min-width: 1200px)"
+            srcset="/src/images/hero-header/image-2_dt.png 1x, 
+                    /src/images/hero-header/image-2_dt@2x.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/src/images/hero-header/image-2_tb.png 1x, 
+                    /src/images/hero-header/image-2_tb@2x.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/src/images/hero-header/image-2_mb.png 1x, 
+                    /src/images/hero-header/image-2_mb@2x.png 2x"
+            type="image/png"
+          />
+            <img
+            src="/src/images/hero-header/image-2_tb.png"
+            alt=""
+            width=""
+            loading="lazy"/>
+          </picture>
+        </div>
+
+        <div class="hero-thumb">
+          <picture class="right-thumb__image">
+            <source
+              media="(min-width: 1200px)"
+              srcset="/src/images/hero-header/image-3_dt.png 1x, 
+                      /src/images/hero-header/image-3_dt@2x.png 2x"
+              type="image/png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/src/images/hero-header/image-3_tb.png 1x, 
+                      /src/images/hero-header/image-3_tb@2x.png 2x"
+              type="image/png"
+            />
+            <img src="/src/images/hero-header/image-3_dt.png" alt="designer" width="" loading="lazy" />
+          </picture>
+        </div>
+
+      </div>
+    </section>
