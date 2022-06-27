@@ -13,83 +13,68 @@
 //   margin-right: auto;
 //   padding-right: 16px;
 //   padding-left: 16px;
-
+// }
 
 .about__container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 20px;
-    padding-left: 20px;
-    background-image: url('../images/images2/desk-bcg-milk-1x_left.png'), url('../images/images2/desk-bcg-milk-1x_right.png');
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-image: url('../images/images2/desk-bcg-milk-1x_left.png'), url('../images/images2/desk-bcg-milk-1x_right.png');
+  background-repeat: no-repeat;
+  background-position: 7% 76%, 92% 77%;
+  background-size: 47px, 71px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution:192dpi),
+  (min-resolution:2dppx) {
+    background-image: url('../images/images2/desk-bcg-milk-2x_left.png'), url('../images/images2/desk-bcg-milk-2x_right.png');
     background-repeat: no-repeat;
-    background-position: 7% 76%, 92% 77%;
+    background-position: 7% 77%, 92% 76%;
     background-size: 47px, 71px;
+  }
 
-    @media screen and (min-width: 768px) {
-      background-image: none;
-      padding-right: 32px;
-      padding-left: 32px;
-    }
+  @media screen and (min-width: 768px) {
+    background-image: none;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
 
-    @media screen and (min-width: 1280px) {
-      padding-right: 16px;
-      padding-left: 16px;
-    }
-
-    @media screen and (min-width:1200px) {
-    // display: block;
+  @media screen and (min-width:1200px) {
+    padding-right: 16px;
+    padding-left: 16px;
     background-image: url('../images/images2/desk-bcg-milk-1x_left.png'), url('../images/images2/desk-bcg-milk-1x_right.png');
     background-repeat: no-repeat;
     background-position: 0% 128%, 100% 116%;
     background-size: 180px, 280px;
-    }
-}
-  
-@media screen and (max-width:767.9px) {
-  @media screen and (min-device-pixel-ratio: 2),
-  (min-resolution:192dpi),
-  (min-resolution:2dppx) {
-    .about__container {
-      background-image: url('../images/images2/desk-bcg-milk-2x_left.png'), url('../images/images2/desk-bcg-milk-2x_right.png');
-      background-repeat: no-repeat;
-      background-position: 7% 77%, 92% 76%;
-      background-size: 47px, 71px;
 
-    }
-  }
-}
-
-@media screen and (max-width:1199.9px) {
-
-  @media screen and (min-device-pixel-ratio: 2),
-  (min-resolution:192dpi),
-  (min-resolution:2dppx) {
-    .about__container {
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution:192dpi),
+    (min-resolution:2dppx) {
       background-image: url('../images/images2/desk-bcg-milk-2x_left.png'), url('../images/images2/desk-bcg-milk-2x_right.png');
       background-repeat: no-repeat;
       background-position: 0% 128%, 100% 116%;
       background-size: 180px, 280px;
-
     }
   }
 }
-
+ 
 .about {
   padding-top: 60px;
   padding-bottom: 40px;
   background-color: var(--about-bg-color);
 
   @media screen and (min-width:768px) {
-      min-width: 768px;
-      padding-bottom: 60px;
-    }
+    min-width: 768px;
+    padding-bottom: 60px;
+  }
   
-    @media screen and (min-width:1200px) {
-      min-width: 1200px;
-      padding-top: 60px;
-      padding-bottom: 60px;
-  
-    }
+  @media screen and (min-width:1200px) {
+    min-width: 1200px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+  }
 }
 
 .about__label {
@@ -140,8 +125,9 @@
 }
 
 .about__description {
-  // padding-right: 60px;
-  width: 220px;
+  padding-right: 60px;
+  width: 280px;
+  margin: 0 auto;
 
   @media screen and (min-width: 768px) {
     width: 334px;
@@ -153,38 +139,6 @@
     margin-left: 99px;
   }
 }
-
-// .about__background-wrapper {
-//   position: relative;
-
-//   .milk__background__left {
-//       position: absolute;
-//       left: -20px;
-//       top: 76%;
-//       height: 42px;
-//       width: 35px;
-//       z-index: 1;
-    
-//       @media screen and (min-width:767.9px) {
-//         display: none;
-        
-//       }
-//     }
-  
-//     .milk__background__right {
-//       position: absolute;
-//       right: -20px;
-//       top: 84%;
-//       height: 97px;
-//       width: 62px;
-//       z-index: 1;
-
-//       @media screen and (min-width:767.9px) {
-//         display: none;
-        
-//       }
-//     }
-// }
 
 .about__text {
   width: 100%;
@@ -269,13 +223,10 @@
   border: none;
 
   @media screen and (min-width: 768px) {
-    font-size: 16px;
-    
+    font-size: 16px; 
   }
-  
 }
 
 .about__button-icon{
   margin-left: 13px;
 }
-
