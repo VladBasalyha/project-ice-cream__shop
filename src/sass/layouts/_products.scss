@@ -19,23 +19,51 @@
   font-size: 34px;
   line-height: 1.15;
   margin-bottom: 157px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 281px;
+    font-size: 30px;
+  }
 }
 
 .products__list {
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  //   align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .products__list-item {
   max-width: 281px;
-  margin-bottom: 160px;
-  margin-left: auto;
-  margin-right: auto;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 224px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 368px;
+  }
+
   position: relative;
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 16px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 32px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -45,13 +73,29 @@
   padding-right: 40px;
   padding-left: 40px;
   padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 118px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 165px;
+  }
 }
 
 .product__img {
   position: absolute;
   width: 100%;
-  top: -160px;
+  top: -115px;
   left: 1px;
+
+  @media screen and (min-width: 768px) {
+    top: -170px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: -250px;
+  }
 }
 
 .product__list-card-title {
@@ -63,6 +107,35 @@
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.04em;
+  fill: white;
+
+  &::after {
+    content: ' ';
+
+    position: absolute;
+    z-index: 999;
+    display: inline-block;
+
+    background-image: url(../images/sprite/three-dots-3.svg);
+    background-size: contain;
+    background-position: center;
+
+    width: 26px;
+    height: 6px;
+
+    top: 215px;
+    right: 45%;
+
+    @media screen and (min-width: 768px) {
+      top: 170px;
+      right: 45%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      top: 220px;
+      right: 45%;
+    }
+  }
 }
 .product__list-card-text {
   margin-bottom: 32px;
@@ -81,12 +154,22 @@
   width: 40px;
   height: 40px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   border: none;
+  &:hover,
+  &:focus {
+    transform: scale(1.5) rotate(360deg);
+    transition-property: transform;
+    transition-duration: 500ms;
+  }
 }
+
 .product__svg {
   fill: #d41443;
 }
+
 .product__list-card-ice-cream {
   background-color: #ffb8ca;
 }
