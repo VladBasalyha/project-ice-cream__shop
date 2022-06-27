@@ -1,145 +1,253 @@
-<!-- <div class="gallery">
-    <h2 class="gallery__h">gallery</h2>
-    <ul class="gallery__grid">
-        <li class="gallery__photo gallery__photo--first">
-            <picture class="gallery__photo--picture">
-                <source
-                    srcset="/src/images/gallery-images/img1_138x138.68_mb.jpg 1x , /src/images/gallery-images/img1_138x138.68_mb_@2x.jpg 2x"
-                    media="(min-width: 1200px)">
-                <source
-                    srcset="/src/images/gallery-images/img1_104.62х105.14_mb.jpg 1x , /src/images/gallery-images/img1_104.62х105.14_mb_@2x.jpg 2x"
-                    media="(min-width: 768px)">
+<div class="gallery">
+  <h2 class="gallery__h">gallery</h2>
+  <ul class="gallery__grid">
+    <li class="gallery__photo gallery__photo--first">
+      <picture class="gallery__photo--picture">
+        <source
+          srcset="
+            /src/images/gallery-images/img1_138x138.68_mb.jpg     1x,
+            /src/images/gallery-images/img1_138x138.68_mb_@2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            /src/images/gallery-images/img1_104.62х105.14_mb.jpg     1x,
+            /src/images/gallery-images/img1_104.62х105.14_mb_@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
 
+        <img
+          class="gallery__photo--image"
+          srcset="/src/images/gallery-images/img1_43.59х43.86_mb_@2x.jpg 2x"
+          src="/src/images/gallery-images/img1_43.59х43.86_mb.jpg"
+          alt="Фотка мороженного"
+        />
+      </picture>
+    </li>
+    <li class="gallery_photo gallery__photo--second">
+      <picture class="gallery__photo--picture">
+        <source
+          srcset="
+            /src/images/gallery-images/img2_138x138.68_mb.jpg     1x,
+            /src/images/gallery-images/img2_138x138.68_mb_@2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            /src/images/gallery-images/img2_104.62х105.14_mb.jpg     1x,
+            /src/images/gallery-images/img2_104.62х105.14_mb_@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
 
-                <img class="gallery__photo--image" srcset="/src/images/gallery-images/img1_43.59х43.86_mb_@2x.jpg 2x"
-                    src="/src/images/gallery-images/img1_43.59х43.86_mb.jpg" alt="Фотка мороженного">
-            </picture>
-        </li>
-        <li class="gallery_photo gallery__photo--second">
-            <picture class="gallery__photo--picture">
-                <source
-                    srcset="/src/images/gallery-images/img2_138x138.68_mb.jpg 1x , /src/images/gallery-images/img2_138x138.68_mb_@2x.jpg 2x"
-                    media="(min-width: 1200px)">
-                <source
-                    srcset="/src/images/gallery-images/img2_104.62х105.14_mb.jpg 1x , /src/images/gallery-images/img2_104.62х105.14_mb_@2x.jpg 2x"
-                    media="(min-width: 768px)">
+        <img
+          class="gallery__photo--image"
+          srcset="/src/images/gallery-images/img2_43.59х43.86_mb_@2x.jpg 2x"
+          src="/src/images/gallery-images/img2_43.59х43.86_mb.jpg"
+          alt="Фотка мороженного"
+        />
+      </picture>
+    </li>
+    <li class="gallery__photo gallery__photo--third">
+      <picture class="gallery__photo--picture">
+        <source
+          srcset="
+            /src/images/gallery-images/img3_138x138.68_mb.jpg     1x,
+            /src/images/gallery-images/img3_138x138.68_mb_@2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            /src/images/gallery-images/img3_104.62х105.14_mb.jpg     1x,
+            /src/images/gallery-images/img3_104.62х105.14_mb_@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
 
+        <img
+          class="gallery__photo--image"
+          srcset="/src/images/gallery-images/img3_43.59х43.86_mb_@2x.jpg 2x"
+          src="/src/images/gallery-images/img3_43.59х43.86_mb.jpg"
+          alt="Фотка мороженного"
+        />
+      </picture>
+    </li>
+    <li class="gallery__photo gallery__photo--fourth">
+      <picture class="gallery__photo--picture">
+        <source
+          srcset="
+            /src/images/gallery-images/img4_283x283.34_mb.jpg     1x,
+            /src/images/gallery-images/img4_283x283.34_mb_@2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            /src/images/gallery-images/img4_214.55х214.81_mb.jpg     1x,
+            /src/images/gallery-images/img4_214.55х214.81_mb_@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
 
-                <img class="gallery__photo--image" srcset="/src/images/gallery-images/img2_43.59х43.86_mb_@2x.jpg 2x"
-                    src="/src/images/gallery-images/img2_43.59х43.86_mb.jpg" alt="Фотка мороженного">
-            </picture>
-        </li>
-        <li class="gallery__photo gallery__photo--third">
-            <picture class="gallery__photo--picture">
-                <source
-                    srcset="/src/images/gallery-images/img3_138x138.68_mb.jpg 1x , /src/images/gallery-images/img3_138x138.68_mb_@2x.jpg 2x"
-                    media="(min-width: 1200px)">
-                <source
-                    srcset="/src/images/gallery-images/img3_104.62х105.14_mb.jpg 1x , /src/images/gallery-images/img3_104.62х105.14_mb_@2x.jpg 2x"
-                    media="(min-width: 768px)">
+        <img class="gallery__photo--image"
+        srcset=/src/images/gallery-images/img4_89.4х89.61_mb_@2x.jpg 2x
+        src="/src/images/gallery-images/img4_89.4х89.61_mb.jpg" alt="Фотка
+        мороженного">
+      </picture>
+    </li>
+    <li class="gallery__photo gallery__photo--fifth">
+      <picture class="gallery__photo--picture">
+        <source
+          srcset="
+            /src/images/gallery-images/img5_138x138.68_mb.jpg     1x,
+            /src/images/gallery-images/img5_138x138.68_mb_@2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            /src/images/gallery-images/img5_104.62х105.14_mb.jpg     1x,
+            /src/images/gallery-images/img5_104.62х105.14_mb_@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
 
+        <img
+          class="gallery__photo--image"
+          srcset="/src/images/gallery-images/img5_43.59х43.86_mb_@2x.jpg 2x"
+          src="/src/images/gallery-images/img5_43.59х43.86_mb.jpg"
+          alt="Фотка мороженного"
+        />
+      </picture>
+    </li>
+    <li class="gallery__photo gallery__photo--sixth">
+      <picture class="gallery__photo--picture">
+        <source
+          srcset="
+            /src/images/gallery-images/img6_138x138.68_mb.jpg     1x,
+            /src/images/gallery-images/img6_138x138.68_mb_@2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            /src/images/gallery-images/img6_104.62х105.14_mb.jpg     1x,
+            /src/images/gallery-images/img6_104.62х105.14_mb_@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
 
-                <img class="gallery__photo--image" srcset="/src/images/gallery-images/img3_43.59х43.86_mb_@2x.jpg 2x"
-                    src="/src/images/gallery-images/img3_43.59х43.86_mb.jpg" alt="Фотка мороженного">
-            </picture>
-        </li>
-        <li class="gallery__photo gallery__photo--fourth">
-            <picture class="gallery__photo--picture">
-                <source
-                    srcset="/src/images/gallery-images/img4_283x283.34_mb.jpg 1x , /src/images/gallery-images/img4_283x283.34_mb_@2x.jpg 2x"
-                    media="(min-width: 1200px)">
-                <source
-                    srcset="/src/images/gallery-images/img4_214.55х214.81_mb.jpg 1x , /src/images/gallery-images/img4_214.55х214.81_mb_@2x.jpg 2x"
-                    media="(min-width: 768px)">
+        <img
+          class="gallery__photo--image"
+          srcset="/src/images/gallery-images/img6_43.59х43.86_mb_@2x.jpg 2x"
+          src="/src/images/gallery-images/img6_43.59х43.86_mb.jpg"
+          alt="Фотка мороженного"
+        />
+      </picture>
+    </li>
+    <li class="gallery__photo gallery__photo--seventh">
+      <picture class="gallery__photo--picture">
+        <source
+          srcset="
+            /src/images/gallery-images/img7_138x138.68_mb.jpg     1x,
+            /src/images/gallery-images/img7_138x138.68_mb_@2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            /src/images/gallery-images/img7_104.62х105.14_mb.jpg     1x,
+            /src/images/gallery-images/img7_104.62х105.14_mb_@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
 
+        <img
+          class="gallery__photo--image"
+          srcset="/src/images/gallery-images/img7_43.59х43.86_mb_@2x.jpg 2x"
+          src="/src/images/gallery-images/img7_43.59х43.86_mb.jpg"
+          alt="Фотка мороженного"
+        />
+      </picture>
+    </li>
+    <li class="gallery__photo gallery__photo--eighth">
+      <picture class="gallery__photo--picture">
+        <source
+          srcset="
+            /src/images/gallery-images/img8_138x138.68_mb.jpg     1x,
+            /src/images/gallery-images/img8_138x138.68_mb_@2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            /src/images/gallery-images/img8_104.62х105.14_mb.jpg     1x,
+            /src/images/gallery-images/img8_104.62х105.14_mb_@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
 
-                <img class="gallery__photo--image" srcset=/src/images/gallery-images/img4_89.4х89.61_mb_@2x.jpg 2x
-                    src="/src/images/gallery-images/img4_89.4х89.61_mb.jpg" alt="Фотка мороженного">
-            </picture>
-        </li>
-        <li class="gallery__photo gallery__photo--fifth">
-            <picture class="gallery__photo--picture">
-                <source
-                    srcset="/src/images/gallery-images/img5_138x138.68_mb.jpg 1x , /src/images/gallery-images/img5_138x138.68_mb_@2x.jpg 2x"
-                    media="(min-width: 1200px)">
-                <source
-                    srcset="/src/images/gallery-images/img5_104.62х105.14_mb.jpg 1x , /src/images/gallery-images/img5_104.62х105.14_mb_@2x.jpg 2x"
-                    media="(min-width: 768px)">
+        <img
+          class="gallery__photo--image"
+          srcset="/src/images/gallery-images/img8_43.59х43.86_mb_@2x.jpg 2x"
+          src="/src/images/gallery-images/img8_43.59х43.86_mb.jpg"
+          alt="Фотка мороженного"
+        />
+      </picture>
+    </li>
+    <li class="gallery__photo gallery__photo--nineth">
+      <picture class="gallery__photo--picture">
+        <source
+          srcset="
+            /src/images/gallery-images/img9_138x138.68_mb.jpg     1x,
+            /src/images/gallery-images/img9_138x138.68_mb_@2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            /src/images/gallery-images/img9_104.62х105.14_mb.jpg     1x,
+            /src/images/gallery-images/img9_104.62х105.14_mb_@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
 
+        <img
+          class="gallery__photo--image"
+          srcset="/src/images/gallery-images/img9_43.59х43.86_mb_@2x.jpg 2x"
+          src="/src/images/gallery-images/img9_43.59х43.86_mb.jpg"
+          alt="Фотка мороженного"
+        />
+      </picture>
+    </li>
+    <li class="gallery__photo gallery__photo--tenth">
+      <picture class="gallery__photo--picture">
+        <source
+          srcset="
+            /src/images/gallery-images/img10_138x138.68_mb.jpg     1x,
+            /src/images/gallery-images/img10_138x138.68_mb_@2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            /src/images/gallery-images/img10_104.62х105.14_mb.jpg     1x,
+            /src/images/gallery-images/img10_104.62х105.14_mb_@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
 
-                <img class="gallery__photo--image" srcset="/src/images/gallery-images/img5_43.59х43.86_mb_@2x.jpg 2x"
-                    src="/src/images/gallery-images/img5_43.59х43.86_mb.jpg" alt="Фотка мороженного">
-            </picture>
-        </li>
-        <li class="gallery__photo gallery__photo--sixth">
-            <picture class="gallery__photo--picture">
-                <source
-                    srcset="/src/images/gallery-images/img6_138x138.68_mb.jpg 1x , /src/images/gallery-images/img6_138x138.68_mb_@2x.jpg 2x"
-                    media="(min-width: 1200px)">
-                <source
-                    srcset="/src/images/gallery-images/img6_104.62х105.14_mb.jpg 1x , /src/images/gallery-images/img6_104.62х105.14_mb_@2x.jpg 2x"
-                    media="(min-width: 768px)">
-
-
-                <img class="gallery__photo--image" srcset="/src/images/gallery-images/img6_43.59х43.86_mb_@2x.jpg 2x"
-                    src="/src/images/gallery-images/img6_43.59х43.86_mb.jpg" alt="Фотка мороженного">
-            </picture>
-        </li>
-        <li class="gallery__photo gallery__photo--seventh">
-            <picture class="gallery__photo--picture">
-                <source
-                    srcset="/src/images/gallery-images/img7_138x138.68_mb.jpg 1x , /src/images/gallery-images/img7_138x138.68_mb_@2x.jpg 2x"
-                    media="(min-width: 1200px)">
-                <source
-                    srcset="/src/images/gallery-images/img7_104.62х105.14_mb.jpg 1x , /src/images/gallery-images/img7_104.62х105.14_mb_@2x.jpg 2x"
-                    media="(min-width: 768px)">
-
-
-                <img class="gallery__photo--image" srcset="/src/images/gallery-images/img7_43.59х43.86_mb_@2x.jpg 2x"
-                    src="/src/images/gallery-images/img7_43.59х43.86_mb.jpg" alt="Фотка мороженного">
-            </picture>
-        </li>
-        <li class="gallery__photo gallery__photo--eighth">
-            <picture class="gallery__photo--picture">
-                <source
-                    srcset="/src/images/gallery-images/img8_138x138.68_mb.jpg 1x , /src/images/gallery-images/img8_138x138.68_mb_@2x.jpg 2x"
-                    media="(min-width: 1200px)">
-                <source
-                    srcset="/src/images/gallery-images/img8_104.62х105.14_mb.jpg 1x , /src/images/gallery-images/img8_104.62х105.14_mb_@2x.jpg 2x"
-                    media="(min-width: 768px)">
-
-
-                <img class="gallery__photo--image" srcset="/src/images/gallery-images/img8_43.59х43.86_mb_@2x.jpg 2x"
-                    src="/src/images/gallery-images/img8_43.59х43.86_mb.jpg" alt="Фотка мороженного">
-            </picture>
-        </li>
-        <li class="gallery__photo gallery__photo--nineth">
-            <picture class="gallery__photo--picture">
-                <source
-                    srcset="/src/images/gallery-images/img9_138x138.68_mb.jpg 1x , /src/images/gallery-images/img9_138x138.68_mb_@2x.jpg 2x"
-                    media="(min-width: 1200px)">
-                <source
-                    srcset="/src/images/gallery-images/img9_104.62х105.14_mb.jpg 1x , /src/images/gallery-images/img9_104.62х105.14_mb_@2x.jpg 2x"
-                    media="(min-width: 768px)">
-
-
-                <img class="gallery__photo--image" srcset="/src/images/gallery-images/img9_43.59х43.86_mb_@2x.jpg 2x"
-                    src="/src/images/gallery-images/img9_43.59х43.86_mb.jpg" alt="Фотка мороженного">
-            </picture>
-        </li>
-        <li class="gallery__photo gallery__photo--tenth">
-            <picture class="gallery__photo--picture">
-                <source
-                    srcset="/src/images/gallery-images/img10_138x138.68_mb.jpg 1x , /src/images/gallery-images/img10_138x138.68_mb_@2x.jpg 2x"
-                    media="(min-width: 1200px)">
-                <source
-                    srcset="/src/images/gallery-images/img10_104.62х105.14_mb.jpg 1x , /src/images/gallery-images/img10_104.62х105.14_mb_@2x.jpg 2x"
-                    media="(min-width: 768px)">
-
-
-                <img class="gallery__photo--image" srcset="/src/images/gallery-images/img10_43.59х43.86_mb_@2x.jpg 2x"
-                    src="/src/images/gallery-images/img10_43.59х43.86_mb.jpg" alt="Фотка мороженного">
-            </picture>
-        </li>
-    </ul>
-</div> -->
+        <img
+          class="gallery__photo--image"
+          srcset="/src/images/gallery-images/img10_43.59х43.86_mb_@2x.jpg 2x"
+          src="/src/images/gallery-images/img10_43.59х43.86_mb.jpg"
+          alt="Фотка мороженного"
+        />
+      </picture>
+    </li>
+  </ul>
+</div>

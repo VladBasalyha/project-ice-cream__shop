@@ -1,0 +1,74 @@
+<!-- модалка -->
+
+<div class="backdrop is-hidden">
+  <div class="modal">
+    <button class="close-modal close-btn-modal">
+      <svg class="close-icon">
+        <use href="./images/sprite/modals.svg#icon-close-mobile"></use>
+      </svg>
+    </button>
+
+    <!-- Форма -->
+
+    <form class="form" autocomplete="off">
+      <p class="form__title">Leave your details, we will call you back</p>
+      <div class="form__box">
+        <label for="name" class="form__field">
+          <b class="form__text">Name</b>
+          <span class="form__container">
+            <input
+              class="form__input"
+              type="text"
+              name="name"
+              id="name"
+              minlength="2"
+              pattern="[a-zA-Zа-яёА-ЯЁ]+"
+              title="Имя должно содержать символи кирилицы или латиницы"
+              required
+            />
+          </span>
+        </label>
+
+        <label for="tel" class="form__field">
+          <b class="form__text">Phone</b>
+          <span class="form__container">
+            <input
+              class="form__input"
+              type="tel"
+              name="tel"
+              id="tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="063-000-00-00"
+              required
+            />
+          </span>
+        </label>
+        <label for="form-mail" class="form__field">
+          <b class="form__text">Email</b>
+          <span class="form__container">
+            <input
+              class="form__input"
+              type="email"
+              name="mail"
+              id="form-mail"
+              required
+            />
+          </span>
+        </label>
+        <label for="comment" class="form__field">
+          <b class="form__text">Comment</b>
+          <span class="form__container">
+            <textarea
+              name="comment"
+              id="comment"
+              rows="10"
+              placeholder="Enter text"
+            ></textarea>
+          </span>
+        </label>
+      </div>
+
+      <button type="submit" class="form-submit">Submit</button>
+    </form>
+  </div>
+</div>
