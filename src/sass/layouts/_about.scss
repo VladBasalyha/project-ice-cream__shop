@@ -4,29 +4,41 @@
   --secondary-text-color: #000000;
   --primary-text-color: #907e82;
   --about-bg-color: #fff5f6;
+  --about-bg-desktop:#E5E5E5;
 }
 
-.about__container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 20px;
-  padding-left: 20px;
+// .about__container {
+//   width: 100%;
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-right: 16px;
+//   padding-left: 16px;
 
-  @media screen and (min-width:768px) {
-      padding-bottom: 83px;
-    }
+
+  .about__container {
+      margin-right: auto;
+      margin-left: auto;
   
-    @media screen and (min-width:1200px) {
-      padding-top: 60px;
-      padding-bottom: 60px;
+      @media screen and (max-width: 767.98px) {
+        padding-right: 20px;
+        padding-left: 20px;
+      }
   
-    }
+      @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+        padding-right: 32px;
+        padding-left: 32px;
+      }
+  
+      @media screen {
+        padding-right: 16px;
+        padding-left: 16px;
+      }
+    
   
     @media screen and (max-width: 767.9px) {
       background-image: url('../images/images2/desk-bcg-milk-1x_left.png'), url('../images/images2/desk-bcg-milk-1x_right.png');
       background-repeat: no-repeat;
-      background-position: 7% 70%, 92% 71%;
+      background-position: 6% 72%, 92% 71%;
       background-size: 47px, 71px;
   
     }
@@ -40,7 +52,7 @@
       .about__container {
         background-image: url('../images/images2/desk-bcg-milk-2x_left.png'), url('../images/images2/desk-bcg-milk-2x_right.png');
         background-repeat: no-repeat;
-        background-position: 7% 70%, 92% 71%;
+        background-position: 6% 72%, 92% 71%;
         background-size: 47px, 71px;
   
       }
@@ -54,6 +66,19 @@
   padding-top: 60px;
   padding-bottom: 40px;
   background-color: var(--about-bg-color);
+
+  @media screen and (min-width:768px) {
+      width: 768px;
+      padding-bottom: 60px;
+    }
+  
+    @media screen and (min-width:1200px) {
+      width: 1200px;
+      background-color: var(--about-bg-desktop);
+      padding-top: 60px;
+      padding-bottom: 60px;
+  
+    }
 }
 
 .about__label {
@@ -70,6 +95,13 @@
   @media screen and (min-width:768px) {
     font-size: 26px;
     line-height: 1.15;
+    margin-bottom: 16px;
+    
+  }
+
+  @media screen and (min-width:1200px) {
+    font-size: 30px;
+    line-height: 1.13;
     
   }
 }
@@ -89,6 +121,13 @@
     font-size: 44px;
     line-height: 55px;
     margin-bottom: 40px;
+    
+   }
+
+   @media screen and (min-width:1200px) {
+      font-size: 58px;
+      line-height: 1.13;
+      margin-bottom: 60pxgit;
     
    }
     
