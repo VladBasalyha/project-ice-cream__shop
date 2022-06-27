@@ -1,4 +1,5 @@
 @import './common';
+
 @import './utils/vars';
 @import './utils/reset';
 @import './utils/mixins';
@@ -6,7 +7,6 @@
 @import './utils/container';
 
 // CSS файли для секцій сторінки
-
 @import './layouts/hero-header';
 @import './layouts/customer-reviews';
 @import './layouts/products';
