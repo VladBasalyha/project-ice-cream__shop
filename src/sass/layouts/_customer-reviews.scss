@@ -42,7 +42,7 @@
   }
 
   @include mq(desktop) {
-    width: 698px;
+    width: 968px;
     height: 138px;
 
     padding-top: 47px;
@@ -78,7 +78,7 @@
 
   @include mq(desktop) {
     width: 821px;
-    height: 95px;
+    height: 65px;
 
     padding-left: 36px;
     padding-right: 35px;
@@ -136,7 +136,7 @@
 
     @include mq(tablet) {
       top: -13px;
-      left: -51px;
+      left: -41px;
 
       width: 60px;
       height: 40px;
@@ -144,7 +144,7 @@
 
     @include mq(desktop) {
       top: -13px;
-      left: -41px;
+      left: -39px;
 
       width: 54px;
       height: 40px;
