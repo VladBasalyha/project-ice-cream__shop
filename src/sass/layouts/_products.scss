@@ -43,7 +43,7 @@
     max-width: 224px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     min-width: 368px;
   }
 
@@ -59,7 +59,7 @@
     }
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     margin-right: 32px;
     &:last-child {
       margin-right: 0;
@@ -78,7 +78,7 @@
     padding-top: 118px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 165px;
   }
 }
@@ -93,7 +93,7 @@
     top: -170px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     top: -250px;
   }
 }
@@ -107,6 +107,7 @@
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.04em;
+  fill: white;
 
   &::after {
     content: ' ';
@@ -115,14 +116,25 @@
     z-index: 999;
     display: inline-block;
 
-    background-image: url(../images/sprite/sprite.svg#three-dots);
-    background-color: #fff;
+    background-image: url(../images/sprite/three-dots-3.svg);
+    background-size: contain;
+    background-position: center;
 
     width: 26px;
     height: 6px;
 
     top: 215px;
     right: 45%;
+
+    @media screen and (min-width: 768px) {
+      top: 170px;
+      right: 45%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      top: 220px;
+      right: 45%;
+    }
   }
 }
 .product__list-card-text {
@@ -148,7 +160,7 @@
   border: none;
   &:hover,
   &:focus {
-    transform: scale(1.5);
+    transform: scale(1.5) rotate(360deg);
     transition-property: transform;
     transition-duration: 500ms;
   }
@@ -156,17 +168,8 @@
 
 .product__svg {
   fill: #d41443;
-  &:hover,
-  &:focus {
-    transform: rotate(360deg);
-    transition-property: background-color, transform;
-    transition-duration: 500ms;
-    transition-timing-function: linear;
-  }
 }
 
-.product__svg:hover {
-}
 .product__list-card-ice-cream {
   background-color: #ffb8ca;
 }
