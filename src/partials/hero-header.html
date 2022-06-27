@@ -1,208 +1,142 @@
-<header
-  class="header">
-  <div
-    class="container header__container">
-    <nav
-      class="site-nav">
-      <a href="./"
-        class="logo">
-        <svg
-          class="logo__icon"
-          width="199"
-          height="50">
-          <use
-            href="images/sprite/sprite.svg#icon-logo">
-          </use>
+<header class="header">
+  <div class="container header__container">
+    <nav class="site-nav">
+      <a href="./" class="logo">
+        <svg class="logo__icon" width="199" height="50">
+          <use href="./images/sprite/sprite.svg#icon-logo"></use>
         </svg>
       </a>
-      <ul
-        class="site-nav__list">
-        <li
-          class="site-nav__item">
-          <a class="site-nav__link site-nav__link-acent"
-            href="">Home</a>
+      <ul class="site-nav__list">
+        <li class="site-nav__item">
+          <a class="site-nav__link site-nav__link-acent" href="">Home</a>
         </li>
-        <li
-          class="site-nav__item">
-          <a class="site-nav__link"
-            href="">About
-            us</a>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="">About us</a>
         </li>
-        <li
-          class="site-nav__item">
-          <a class="site-nav__link"
-            href="">How
-            it's
-            made?</a>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="">How it's made?</a>
         </li>
-        <li
-          class="site-nav__item">
-          <a class="site-nav__link"
-            href="">Our
-            products</a>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="">Our products</a>
         </li>
-        <li
-          class="site-nav__item">
-          <a class="site-nav__link"
-            href="">Contact</a>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="">Contact</a>
         </li>
       </ul>
     </nav>
-    <ul
-      class="header-button__list">
-      <li
-        class="header-button__item">
-        <button
-          data-mobile-open
-          type="button"
-          class="mobile-button__open">
-          <div
-            class="mobile-button__icon">
-          </div>
-          <div
-            class="mobile-button__icon">
-          </div>
-          <div
-            class="mobile-button__icon">
-          </div>
+    <ul class="header-button__list">
+      <li class="header-button__item">
+        <button type="button" class="mobile-button__open js-open-menu">
+          <div class="mobile-button__icon"></div>
+          <div class="mobile-button__icon"></div>
+          <div class="mobile-button__icon"></div>
         </button>
       </li>
-      <li
-        class="header-button__item">
-        <button
-          class="header-button">
-          Buy
-          now
-          <svg
-            class="header-button__icon"
-            width="10px"
-            height="20px">
-            <use
-              href="images/sprite/sprite.svg#icon-button">
-            </use>
+      <li class="header-button__item">
+        <button class="header-button">
+          Buy now
+          <svg class="header-button__icon" width="10px" height="20px">
+            <use href="./images/sprite/sprite.svg#icon-button"></use>
           </svg>
         </button>
       </li>
     </ul>
   </div>
+
+  <!-- моб меню -->
+  <div class="mobile-menu js-menu-container">
+    <div class="mobile-menu__container" id="mobile-menu">
+      <button class="close-btn mobile-menu__close-btn js-close-menu">
+        <svg class="close-btn__icon">
+          <use href="./images/sprite/modals.svg#icon-close-mobile"></use>
+        </svg>
+      </button>
+      <button class="header-button header-button--mob">
+        Buy now
+        <svg class="header-button__icon" width="20px" height="20px">
+          <use href="./images/sprite/sprite.svg#icon-button"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu__site-nav">
+        <li class="mobile-menu__item">
+          <a href="./index.html" class="mobile-menu__link active-mobile"
+            >Home</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">About us</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">How it’s made?</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Our products</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </header>
 
-<section
-  class="hero">
-  <div
-    class="container hero__container">
-    <div
-      class="hero-thumb">
-      <h1
-        class="hero-title">
-        ice
-        cream<br />made
-        with<br /><span
-          class="hero-title__acent">passion</span>
+<section class="hero">
+  <div class="container hero__container">
+    <div class="hero-thumb">
+      <h1 class="hero-title">
+        ice cream<br />made with<br /><span class="hero-title__acent"
+          >passion</span
+        >
       </h1>
-      <ul
-        class="hero-button__list">
-        <li
-          class="hero-button__item">
-          <button
-            class="hero-button hero-button__acent">Products</button>
+      <ul class="hero-button__list">
+        <li class="hero-button__item">
+          <button class="hero-button hero-button__acent">Products</button>
         </li>
-        <li
-          class="hero-button__item">
-          <button
-            class="hero-button">How
-            it's
-            made?</button>
+        <li class="hero-button__item">
+          <button class="hero-button">How it's made?</button>
         </li>
       </ul>
     </div>
 
-    <div
-      class="hero-thumb">
-      <ul
-        class="thumb__list">
-        <li
-          class="hero-thumb__item">
-          <p
-            class="hero-thumb__title">
+    <div class="hero-thumb">
+      <ul class="thumb__list">
+        <li class="hero-thumb__item">
+          <p class="hero-thumb__title">
             16
-            <svg
-              class="hero-thumb-title__icon"
-              width="30px"
-              height="30px">
-              <use
-                href="images/sprite/sprite.svg#icon-circle">
-              </use>
+            <svg class="hero-thumb-title__icon" width="30px" height="30px">
+              <use href="./images/sprite/sprite.svg#icon-circle"></use>
             </svg>
           </p>
-          <p
-            class="hero-thumb__text">
-            cafes
-          </p>
+          <p class="hero-thumb__text">cafes</p>
         </li>
 
-        <li
-          class="hero-thumb__item">
-          <p
-            class="hero-thumb__title">
+        <li class="hero-thumb__item">
+          <p class="hero-thumb__title">
             23
-            <svg
-              class="hero-thumb-title__icon"
-              width="30px"
-              height="30px">
-              <use
-                href="images/sprite/sprite.svg#icon-circle">
-              </use>
+            <svg class="hero-thumb-title__icon" width="30px" height="30px">
+              <use href="./images/sprite/sprite.svg#icon-circle"></use>
             </svg>
           </p>
-          <p
-            class="hero-thumb__text">
-            food
-            trucks
-          </p>
+          <p class="hero-thumb__text">food trucks</p>
         </li>
       </ul>
     </div>
 
-    <div
-      class="hero-thumb">
-      <p
-        class="hero-thumb__paragraph">
-        Lorem
-        ipsum
-        dolor
-        sit
-        amet,
-        consectetur
-        adipiscing
-        elit,
-        sed
-        do
-        eiusmod
-        tempor
-        incididunt
-        ut
-        labore
-        et
+    <div class="hero-thumb">
+      <p class="hero-thumb__paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
       </p>
-      <a
-        class="hero-thumb__link">
-        <svg
-          class="hero-thumb__icon"
-          width="26"
-          height="26">
-          <use
-            href="../images/sprite/sprite.svg">
-          </use>
+      <a class="hero-thumb__link">
+        <svg class="hero-thumb__icon" width="26" height="26">
+          <use href="./images/sprite/sprite.svg#right-arrow1"></use>
         </svg>
       </a>
     </div>
-    <div
-      class="hero__icon">
-    </div>
+    <div class="hero__icon"></div>
 
-    <div
-      class="hero-thumb">
+    <div class="hero-thumb">
       <picture>
         <source
           media="(min-width: 1200px)"
@@ -210,24 +144,26 @@
             ./images/hero-header/image-1_dt.png    1x,
             ./images/hero-header/image-1_dt@2x.png 2x
           "
-          type="image/png" />
+          type="image/png"
+        />
         <source
           media="(min-width: 768px)"
           srcset="
             ./images/hero-header/image-1_tb.png    1x,
             ./images/hero-header/image-1_tb@2x.png 2x
           "
-          type="image/png" />
+          type="image/png"
+        />
         <img
           src="./images/hero-header/image-1_dt.png"
           alt="designer"
           width=""
-          loading="lazy" />
+          loading="lazy"
+        />
       </picture>
     </div>
 
-    <div
-      class="hero-thumb">
+    <div class="hero-thumb">
       <picture>
         <source
           media="(min-width: 1200px)"
@@ -235,52 +171,57 @@
             ./images/hero-header/image-2_dt.png    1x,
             ./images/hero-header/image-2_dt@2x.png 2x
           "
-          type="image/png" />
+          type="image/png"
+        />
         <source
           media="(min-width: 768px)"
           srcset="
             ./images/hero-header/image-2_tb.png    1x,
             ./images/hero-header/image-2_tb@2x.png 2x
           "
-          type="image/png" />
+          type="image/png"
+        />
         <source
           media="(max-width: 767px)"
           srcset="
             ./images/hero-header/image-2_mb.png    1x,
             ./images/hero-header/image-2_mb@2x.png 2x
           "
-          type="image/png" />
+          type="image/png"
+        />
         <img
           src="./images/hero-header/image-2_tb.png"
           alt=""
           width=""
-          loading="lazy" />
+          loading="lazy"
+        />
       </picture>
     </div>
 
-    <div
-      class="hero-thumb">
-      <picture
-        class="right-thumb__image">
+    <div class="hero-thumb">
+      <picture class="right-thumb__image">
         <source
           media="(min-width: 1200px)"
           srcset="
             ./images/hero-header/image-3_dt.png    1x,
             ./images/hero-header/image-3_dt@2x.png 2x
           "
-          type="image/png" />
+          type="image/png"
+        />
         <source
           media="(min-width: 768px)"
           srcset="
             ./images/hero-header/image-3_tb.png    1x,
             ./images/hero-header/image-3_tb@2x.png 2x
           "
-          type="image/png" />
+          type="image/png"
+        />
         <img
           src="./images/hero-header/image-3_dt.png"
           alt="designer"
           width=""
-          loading="lazy" />
+          loading="lazy"
+        />
       </picture>
     </div>
   </div>
