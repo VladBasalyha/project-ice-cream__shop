@@ -1,0 +1,248 @@
+/* ===== модалка форма =====*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000080;
+  opacity: 1;
+  transition: opacity 700ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: blanchedalmond;
+  box-shadow: 0px 1px 3px rgb(255, 184, 201), 0px 1px 1px rgb(255, 184, 201),
+    0px 2px 1px rgb(255, 184, 201);
+  border-radius: 10px;
+  border-color: #ffb8ca;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-modal {
+  position: absolute;
+  padding: 5px;
+  display: block;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ffb8ca;
+  cursor: pointer;
+  background-color: darksalmon;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  fill: #d41443;
+}
+
+.close-icon {
+  fill: #ffb8ca;
+
+  width: 11px;
+  height: 11px;
+}
+
+.form {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.form__title {
+  margin-bottom: 20px;
+  font-family: 'Titan One';
+  font-size: 18px;
+  line-height: 1.13;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #d41443;
+}
+
+.form__box {
+  margin-bottom: 50px;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form__text {
+  left: 15px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  font-family: 'DM Sans';
+  color: #d41443;
+}
+
+.form__container > input {
+  border-radius: 10px;
+  border: 1px solid #ffb8ca;
+  height: 40px;
+  width: 100%;
+  padding-left: 20px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__input:focus,
+.form__input:hover {
+  outline: none;
+  border-color: #d41443;
+}
+
+.form__input:focus + .form__icon,
+.form__input:hover + .form__icon {
+  fill: #d41443;
+}
+
+.form__container {
+  position: relative;
+}
+
+.form__container > textarea::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.502);
+}
+
+.form__container > textarea {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #ffb8ca;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  resize: none;
+}
+
+.form__container > textarea:focus,
+.form__container > textarea:hover {
+  outline: none;
+  border-color: #d41443;
+}
+
+.form__icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+  .form {
+    width: 370px;
+    height: 342px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+  .form {
+    width: 370px;
+    height: 342px;
+  }
+}
+
+@media screen and(min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+
+  .form {
+    width: 448px;
+    height: 342px;
+  }
+}
+
+/* модалка кнопка */
+
+.form-submit {
+  font-style: normal;
+
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+  display: flex;
+  margin: 0 auto;
+  border: transparent;
+  background-color: #d41443;
+  padding: 10px 55px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  letter-spacing: 0.04em;
+  font-family: DM Sans;
+}
+.form-button {
+  align-self: center;
+  width: 200px;
+  height: 50px;
+  padding: 10px 55px;
+  background-color: #d41443;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1, 88;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  margin-top: 30px;
+}
