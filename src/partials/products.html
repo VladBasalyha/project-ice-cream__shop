@@ -1,49 +1,166 @@
-<!-- 
-    <section class="products">
-        <div class="container">
-            <p class="products__text">100% natural</p>
-            <h2 class="products__title">products</h2>
-            <ul class="products__list">
-                <li class="products__list-item">
-                    <div class="product__list-card product__list-card-ice-cream">
-                        <img class="product__img" src="./images/products/home-pic1.png" alt="пломбир" width="280">
-                        <h3 class="product__list-card-title product__list-card-title-ice-cream">ice cream</h3>
-                        <p class="product__list-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna
-                        aliqua facilisis.</p>
-                        <button type="button" class="product__list-card-btn">
-                            <svg class="product__svg" width="40" height="40">
-                                <use href="./images/sprite/sprite.svg#right-arrow1"></use>
-                             </svg>
-                        </button>
-                    </div>
-                </li>
-                <li class="products__list-item">
-                    <div class="product__list-card product__list-card-ice-coffe">
-                        <img class="product__img" src="./images/products/home-pic2.png" alt="пломбир" width="">
-                        <h3 class="product__list-card-title">ice coffee</h3>
-                        <p class="product__list-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et. dolore magna
-                            aliqua facilisis.</p>
-                        <button type="button" class="product__list-card-btn">
-                            <svg class="product__svg" width="40" height="40">
-                                <use href="./images/sprite/sprite.svg#right-arrow1"></use>
-                            </svg>
-                        </button>
-                </li>
-                <li class="products__list-item">
-                    <div class="product__list-card product__list-card-milkshakes">
-                        <img class="product__img" src="./images/products/home-pic3.png" alt="пломбир" width="">
-                        <h3 class="product__list-card-title">milkshakes</h3>
-                        <p class="product__list-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et. dolore magna
-                            aliqua facilisis.</p>
-                        <button type="button" class="product__list-card-btn">
-                            <svg class="product__svg" width="40" height="40">
-                                <use href="./images/sprite/sprite.svg#right-arrow1"></use>
-                            </svg>
-                        </button>
-                </li>
-            </ul>
+<section class="products">
+  <div class="container">
+    <p class="products__text">100% natural</p>
+    <h2 class="products__title">products</h2>
+    <ul class="products__list">
+      <li class="products__list-item">
+        <div class="product__list-card product__list-card-ice-cream">
+                <picture>
+                <!-- десктоп -->
+                    <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/products/home-pic1dt.png     1x,
+                  ./images/products/home-pic1@2xdt.png  2x
+                "
+                type="image/png"
+                    />
+                <!-- планшет -->
+                    <source
+            media="(min-width: 768px)"
+            srcset="
+                ./images/products/home-pic1tb.png     1x,
+                ./images/products/home-pic1@2xtb.png  2x
+             "
+             type="image/png"
+                />
+
+                <!-- мобилка -->
+                <source
+            media="(max-width: 767px)"
+            srcset="
+                ./images/products/home-pic1mb.png     1x,
+                ./images/products/home-pic1@2xmb.png  2x
+            "
+            type="image/png"
+                />
+                 <!-- дефолтное -->
+                <img
+                class="product__img"
+                src="./images/products/home-pic1.png"
+                alt="пломбир"
+                width="280"
+                loading="lazy"
+                />
+            <h3 class="product__list-card-title product__list-card-title-ice-cream">
+                ice cream
+            </h3>
+            <p class="product__list-card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et. dolore magna aliqua
+            facilisis.
+            </p>
+          <button type="button" class="product__list-card-btn">
+            <svg class="product__svg" width="15" height="15">
+              <use href="./images/sprite/sprite.svg#right-arrow"></use>
+            </svg>
+          </button>
         </div>
-    </section>
-     -->
+      </li>
+      <li class="products__list-item">
+        <div class="product__list-card product__list-card-ice-coffe">
+            <picture>
+             <!-- десктоп -->
+            <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/products/home-pic2dt.png     1x,
+                  ./images/products/home-pic2@2xdt.png  2x
+                "
+                type="image/png"
+            />
+            <!-- планшет -->
+            <source
+            media="(min-width: 768px)"
+            srcset="
+                ./images/products/home-pic2tb.png     1x,
+                ./images/products/home-pic2@2xtb.png  2x
+             "
+             type="image/png"
+            />
+
+            <!-- мобилка -->
+            <source
+            media="(max-width: 767px)"
+            srcset="
+                ./images/products/home-pic2mb.png     1x,
+                ./images/products/home-pic2@2xmb.png  2x
+            "
+            type="image/png"
+            />
+            <!-- дефолтное -->
+
+          <img
+            class="product__img"
+            src="./images/products/home-pic2.png"
+            alt="пломбир"
+            width=""
+            loading="lazy"
+          />
+          <h3 class="product__list-card-title">ice coffee</h3>
+          <p class="product__list-card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et. dolore magna aliqua
+            facilisis.
+          </p>
+          <button type="button" class="product__list-card-btn">
+            <svg class="product__svg" width="15" height="15">
+              <use href="./images/sprite/sprite.svg#right-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="products__list-item">
+        <div class="product__list-card product__list-card-milkshakes">
+            <picture>
+            <!-- десктоп -->
+                <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/products/home-pic3dt.png     1x,
+                          ./images/products/home-pic3@2xdt.png  2x
+                        "
+                        type="image/png"
+                    />
+            <!-- планшет -->
+                    <source
+                    media="(min-width: 768px)"
+                    srcset="
+                        ./images/products/home-pic3tb.png     1x,
+                        ./images/products/home-pic3@2xtb.png  2x
+                     "
+                     type="image/png"
+                        />
+            <!-- мобилка -->
+                    <source
+                    media="(max-width: 767px)"
+                    srcset="
+                        ./images/products/home-pic3mb.png     1x,
+                        ./images/products/home-pic3@2xmb.png  2x
+                    "
+                    type="image/png"
+                    />
+            <!-- дефолтное -->
+          <img
+            class="product__img"
+            src="./images/products/home-pic3.png"
+            alt="пломбир"
+            width=""
+            loading="lazy"
+          />
+          <h3 class="product__list-card-title">milkshakes</h3>
+          <p class="product__list-card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et. dolore magna aliqua
+            facilisis.
+          </p>
+          <button type="button" class="product__list-card-btn">
+            <svg class="product__svg" width="15" height="15">
+              <use href="./images/sprite/sprite.svg#right-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
