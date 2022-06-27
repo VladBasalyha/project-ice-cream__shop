@@ -15,9 +15,10 @@
     background-color: $footerBgColor;
 
     & .container {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
+        // width: 100%;
+        // max-width: 1200px;
+        // margin: 0 auto;
+        border-bottom: 1px solid #E1E1E1;
 
         @media screen and (max-width: 767px) {
             padding: 0 20px;
@@ -31,6 +32,7 @@
             width: 768px;
             // padding: 0 16px;
             display: flex;
+            justify-content: space-between;
         }
     
         @media screen and (min-width: 1200px) {
@@ -53,6 +55,9 @@
         @media screen and (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
+            @media screen and (min-width: 1200px) {
+                max-width: 472px;
+            }
         }
     }
 
@@ -66,6 +71,10 @@
         margin-bottom: 16px;
         color: $subAccentColor;
         max-width: 232px;
+
+        @media screen and (min-width: 1200px) {
+            max-width: 472px;
+        }
     }
 
     & .title {
@@ -77,6 +86,23 @@
         margin-bottom: 40px;
         color: $accentColor;
         max-width: 200px;
+
+        @media screen and (min-width: 1200px) {
+            max-width: 472px;
+        }
+    }
+
+    &__contacts {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
+            align-items: flex-end;
+
+            @media screen and (min-width: 1200px) {
+                max-width: 319px;
+            }
+        }
     }
 }
 
@@ -98,7 +124,6 @@
     line-height: 186%;
     padding-bottom: 40px;
     margin-bottom: 16px;
-    border-bottom: 1px solid #E1E1E1;
 
     &__tel {
         color: $accentColor;
@@ -111,4 +136,10 @@
     line-height: 152%;
     text-align: center;
     color: $articleColor;
+    // padding: 16px auto;
+
+    @media screen and (max-width: 767px) {
+        max-width: 150px;
+        margin: 16px auto 0px;
+    }
 }
