@@ -12,13 +12,52 @@
   margin-right: auto;
   padding-right: 20px;
   padding-left: 20px;
-}
+
+  @media screen and (min-width:768px) {
+      padding-bottom: 83px;
+    }
+  
+    @media screen and (min-width:1200px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+  
+    }
+  
+    @media screen and (max-width: 767.9px) {
+      background-image: url('../images/images2/desk-bcg-milk-1x_left.png'), url('../images/images2/desk-bcg-milk-1x_right.png');
+      background-repeat: no-repeat;
+      background-position: 7% 70%, 92% 71%;
+      background-size: 47px, 71px;
+  
+    }
+  }
+  
+  @media screen and (max-width:767.9px) {
+  
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution:192dpi),
+    (min-resolution:2dppx) {
+      .about__container {
+        background-image: url('../images/images2/desk-bcg-milk-2x_left.png'), url('../images/images2/desk-bcg-milk-2x_right.png');
+        background-repeat: no-repeat;
+        background-position: 7% 70%, 92% 71%;
+        background-size: 47px, 71px;
+  
+      }
+    }
+
+  }
+
+
 
 .about {
   padding-top: 60px;
   padding-bottom: 40px;
   background-color: var(--about-bg-color);
 }
+
+  
+
 
 .about__label {
   font-family: 'Titan One';
@@ -30,6 +69,12 @@
   color: var(--ligth-pink-color);
   margin-top: 0;
   margin-bottom: 15px;
+
+  @media screen and (min-width:768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    
+  }
 }
 
 .about__header {
@@ -42,38 +87,64 @@
   text-transform: uppercase;
   color: var(--dark-pinl-color);
   margin-bottom: 32px;
-}
+
+   @media screen and (min-width:768px) {
+    font-size: 44px;
+    line-height: 55px;
+    margin-bottom: 40px;
+    
+   }
+    
+  }
+
+  //  .about__description{
+
+  //   @media screen and (min-width:768px) {
+  //     display: flex;
+      
+  //   }
+  //  }
 
 .about img {
   width: 100%;
 }
 
-.about__background-wrapper {
-  position: relative;
+// .about__background-wrapper {
+//   position: relative;
 
-  .milk__background__left {
-      position: absolute;
-      left: -20px;
-      top: 76%;
-      height: 42px;
-      width: 35px;
-      z-index: 1;
-    }
+//   .milk__background__left {
+//       position: absolute;
+//       left: -20px;
+//       top: 76%;
+//       height: 42px;
+//       width: 35px;
+//       z-index: 1;
+    
+//       @media screen and (min-width:767.9px) {
+//         display: none;
+        
+//       }
+//     }
   
-    .milk__background__right {
-      position: absolute;
-      right: -20px;
-      top: 84%;
-      height: 97px;
-      width: 62px;
-      z-index: 1;
-    }
-}
+//     .milk__background__right {
+//       position: absolute;
+//       right: -20px;
+//       top: 84%;
+//       height: 97px;
+//       width: 62px;
+//       z-index: 1;
+
+//       @media screen and (min-width:767.9px) {
+//         display: none;
+        
+//       }
+//     }
+// }
 
 .about__text {
   /* font-family: "DM Sans"; */
-  width: 100%;
-  padding-right: 60px;
+  width: 75%;
+  // padding-right: 60px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.58;
@@ -103,6 +174,7 @@
     width: 334px;
     font-size: 14px;
     line-height: 1.78;
+    margin-bottom: 40px;
   }
 }
 
@@ -121,22 +193,39 @@
       justify-content: center;
     }
   }
+
+  @media screen and (min-width:768px) {
+    margin-right: 32px;
+    
+  }
 }
 
 .about__position {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 
   @media screen and (min-width: 480px) and (max-width: 767.9px) {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
+
+    @media screen and (min-width:768px){
+      display: flex;
+      
+    }
+
 }
 
-// .about__description {}
+// .about__description {
+
+//   @media screen and (min-width:768px) {
+//     display: flex;
+//     flex-direction: row;
+    
+//   }
+// }
 
 .about__button {
-  margin-top: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -154,6 +243,4 @@
 .about__button-icon{
   margin-left: 13px;
 }
-
-  
 
