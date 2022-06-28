@@ -17,63 +17,77 @@
     & .container {
         // width: 100%;
         // max-width: 1200px;
-        // margin: 0 auto;
         border-bottom: 1px solid #E1E1E1;
-
-        @media screen and (max-width: 767px) {
-            padding: 0 20px;
-        }        
     
         @media screen and (min-width: 768px) {
-            width: 768px;
+            // width: 768px;
             display: flex;
             justify-content: space-between;
         }
     
-        @media screen and (min-width: 1200px) {
-            width: 1200px;
-        }
+        // @media screen and (min-width: 1200px) {
+        //     width: 1200px;
+        // }
     }
 
     & .titles {
+        font-family: $titleFont;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+
         @media screen and (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
+            max-width: 340px;
         }
 
         @media screen and (min-width: 1200px) {
-            max-width: 472px;
+            max-width: 480px;
         }
     }
 
     & .label {
-        font-family: $titleFont;
-        font-style: normal;
-        font-weight: 400;
         font-size: 18px;
         line-height: 1.17;
-        text-transform: uppercase;
         margin-bottom: 16px;
         color: $subAccentColor;
         max-width: 232px;
 
+        @media screen and (min-width: 768px) {
+            max-width: 340px;
+            font-size: 26px;
+            line-height: 1.15;
+            letter-spacing: 0.04em;
+        }
+
         @media screen and (min-width: 1200px) {
-            max-width: 472px;
+            max-width: 474px;
+            font-size: 30px;
+            line-height: 1.13;
         }
     }
 
     & .title {
-        font-family: $titleFont;
         font-size: 34px;
         line-height: 1.15;
         letter-spacing: 0.04em;
-        text-transform: uppercase;
         margin-bottom: 40px;
         color: $accentColor;
         max-width: 200px;
 
+        @media screen and (min-width: 768px) {
+            max-width: 340px;
+            font-size: 48px;
+            line-height: 1.15;
+            letter-spacing: 0.06em;
+        }
+
         @media screen and (min-width: 1200px) {
-            max-width: 472px;
+            max-width: 480px;
+            font-size: 58px;
+            line-height: 1.14;
+            letter-spacing: 0.06em;
         }
     }
 
@@ -83,9 +97,40 @@
             flex-wrap: wrap;
             justify-content: end;
             align-items: flex-end;
+            max-width: 268px;
+        }
 
-            @media screen and (min-width: 1200px) {
-                max-width: 319px;
+        @media screen and (min-width: 1200px) {
+            max-width: 319px;
+        }
+    }
+
+    &-address {
+        font-style: normal;
+        text-align: right;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 186%;
+        padding-bottom: 40px;
+        margin-bottom: 16px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 16px;
+            letter-spacing: 0.06em;
+        }
+    
+        &__tel {
+            color: $accentColor;
+            transition: color, text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+            &:hover,
+            &:focus {
+                color: $subAccentColor;
+                text-shadow: 1px 1px 2px 2px #00000040;
             }
         }
     }
@@ -95,10 +140,19 @@
     display: flex;
     justify-content: end;
     margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        // margin-bottom: 0;
+        padding-top: 60px;
+    }
 }
 
 .social-links .social-links__item+.social-links__item {
     margin-left: 28px;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 30px;
+        }
 }
 
 .social-icon {
@@ -110,27 +164,6 @@
     &:focus {
         fill: $accentColor;
         box-shadow: 1px 1px 2px 2px #00000040;
-    }
-}
-
-.footer-address {
-    font-style: normal;
-    text-align: right;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 186%;
-    padding-bottom: 40px;
-    margin-bottom: 16px;
-
-    &__tel {
-        color: $accentColor;
-        transition: color, text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover,
-        &:focus {
-            color: $subAccentColor;
-            text-shadow: 1px 1px 2px 2px #00000040;
-        }
     }
 }
 
