@@ -85,16 +85,9 @@
   }
 }
 
-// .customer-reviews__quotes {
-//   position: absolute;
-//   top: 30;
-//   left: 53;
-
-//   fill: red;
-// }
-
 .customer-reviews__text-review {
   position: relative;
+  z-index: 20;
 
   font-style: normal;
   font-weight: 500;
@@ -121,6 +114,7 @@
 
   &::before {
     position: absolute;
+    z-index: -5;
     top: -13px;
     left: -13px;
 
@@ -154,7 +148,6 @@
 
 .customer-reviews__three-dots {
   fill: #d31342;
-  //   margin-top: 0;
   margin-bottom: 16px;
 }
 
