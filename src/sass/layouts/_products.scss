@@ -158,11 +158,12 @@
   align-items: center;
   margin: auto;
   border: none;
+
+  transition-property: transform;
+  transition-duration: 500ms;
   &:hover,
   &:focus {
     transform: scale(1.5) rotate(360deg);
-    transition-property: transform;
-    transition-duration: 500ms;
   }
 }
 
