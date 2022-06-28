@@ -125,12 +125,13 @@
     
         &__tel {
             color: $accentColor;
-            transition: color, text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
             &:hover,
             &:focus {
                 color: $subAccentColor;
-                text-shadow: 1px 1px 2px 2px #00000040;
+                text-shadow: 1px 1px 2px #00000040;
             }
         }
     }
@@ -158,12 +159,13 @@
 .social-icon {
     border-radius: 50%;
     fill: $subAccentColor;
-    transition: fill, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-        fill: $accentColor;
         box-shadow: 1px 1px 2px 2px #00000040;
+        fill: $accentColor;
     }
 }
 
