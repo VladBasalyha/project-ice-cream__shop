@@ -27,9 +27,31 @@
 
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 16px;
+  margin-bottom: 36px;
 
   background-color: #fafafa;
+
+  &::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+
+    content: '';
+
+    width: 32px;
+    height: 4px;
+
+    background-image: url(../images/sprite/three-dots-maroon.svg);
+
+    @include mq(tablet) {
+      bottom: -8px;
+    }
+
+    @include mq(desktop) {
+      bottom: -20px;
+    }
+  }
 
   @include mq(tablet) {
     width: 620px;
@@ -38,7 +60,7 @@
     padding-top: 37px;
     padding-bottom: 44px;
 
-    margin-bottom: 4px;
+    margin-bottom: 24px;
   }
 
   @include mq(desktop) {
@@ -48,7 +70,7 @@
     padding-top: 47px;
     padding-bottom: 39px;
 
-    margin-bottom: 16px;
+    margin-bottom: 36px;
   }
 }
 
@@ -115,6 +137,7 @@
   &::before {
     position: absolute;
     z-index: -5;
+
     top: -13px;
     left: -13px;
 
@@ -123,10 +146,9 @@
 
     width: 54px;
     height: 40px;
-    background-image: url(../images/customer-reviews/quotes.png);
     background-repeat: no-repeat;
-    // background-image: url(../images/sprite/customer-reviews.svg#quotes-2);
-    // fill: #E1E1E1;
+    background-image: url(../images/sprite/quotes.svg);
+    // background-image: url(../images/sprite/customer-reviews.svg#quotes);
 
     @include mq(tablet) {
       top: -13px;
@@ -146,15 +168,11 @@
   }
 }
 
-.customer-reviews__three-dots {
-  fill: #d31342;
-  margin-bottom: 16px;
-}
-
 .customer-reviews__name {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.86;
+  text-align: center;
 
   color: #000000;
 
