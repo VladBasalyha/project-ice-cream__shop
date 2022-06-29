@@ -115,6 +115,71 @@
   color: #d41443;
 }
 
+.donate-btn {
+  position: fixed;
+  right: 30px;
+  bottom: 110px;
+  z-index: 5;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  animation: animateZSUMob 3000ms infinite 1000ms;
+}
+@keyframes animateZSUMob {
+  0% {
+    background-color: yellow;
+  }
+
+  25% {
+    background-color: blue;
+  }
+
+  50% {
+    background-color: yellow;
+  }
+
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .donate-btn {
+    animation: animateZSU 3000ms infinite 1000ms;
+  }
+
+  @keyframes animateZSU {
+    0% {
+      transform: translate(0, 0) scale(1);
+      background-color: yellow;
+    }
+
+    25% {
+      background-color: blue;
+    }
+
+    50% {
+      transform: translate(-50px, -100px) scale(2);
+      background-color: yellow;
+    }
+
+    75% {
+      background-color: blue;
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
+      background-color: yellow;
+    }
+  }
+}
+
 .button-up {
   position: fixed;
   right: 30px;

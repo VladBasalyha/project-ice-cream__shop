@@ -146,5 +146,5 @@ closeAnchor4.addEventListener('click', onAnchorClick);
 
 function onAnchorClick() {
   mobileBoxBacground.classList.remove('is-open');
-  mobileBox.classList.remove('is-open');
+    mobileBox.classList.remove('is-open');
 }
