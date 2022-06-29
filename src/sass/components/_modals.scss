@@ -66,7 +66,7 @@
   border-radius: 50%;
   border: 1px solid #ffb8ca;
   cursor: pointer;
-  background-color: darksalmon;
+  background-color: #ffb8ca;
 }
 
 .close-modal:hover,
@@ -75,10 +75,11 @@
 }
 
 .close-icon {
-  fill: #ffb8ca;
-
-  width: 11px;
-  height: 11px;
+  fill: #ffffff;
+  margin: auto;
+  display: block;
+  width: 15px;
+  height: 15px;
 }
 
 .form {
