@@ -177,7 +177,9 @@
   min-width: 180px;
   border-radius: 22px;
   padding: 8px 35px;
+
   text-align: center;
+
   @media screen and (max-width: 768px) {
     margin-left: auto;
     margin-right: auto;
@@ -185,11 +187,15 @@
     margin-bottom: 10px;
   }
 
-  transition: box-shadow 250ms ease-in;
+  transition: all 250ms ease-in;
 
   &:hover,
   &:focus {
     box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    animation: pulse 0.75s infinite;
+    transition: .25s;
+    
+
     .icon-arrow--Locations {
       transform: translatex(10px);
       rotate: 180deg;
@@ -217,12 +223,14 @@
   min-width: 180px;
   border-radius: 22px;
   padding: 8px 35px;
-  transition: box-shadow 250ms ease-in;
+
+  transition: all 250ms ease-in;
 
   &:hover,
   &:focus {
     box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
-
+    animation: pulse 0.75s infinite;
+      transition: .25s;
     .icon-arrow--Franchise {
       transform: translatex(10px);
       rotate: 180deg;
@@ -267,3 +275,15 @@
   transition-property: transform;
   transition-duration: 500ms;
 }
+.button-4 {
+  background-color: transparent;
+  border: 3px solid #ff0251;
+  color: #ff0251;
+  transition: .3s;
+}
+
+.button-4:hover {
+  animation: pulse 1s infinite;
+  transition: .3s;
+}
+
