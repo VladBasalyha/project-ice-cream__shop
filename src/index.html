@@ -39,6 +39,7 @@
 
     <include src="./partials/footer.html"> </include>
     <include src="./partials/modals.html"></include>
+    <include src="./partials/buynow-menu.html"></include>
 
     <!-- scroll -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -59,6 +60,12 @@
           $('body,html').animate({ scrollTop: top }, 1500);
         });
         $('#scroll-menu3').on('click', 'a', function (event) {
+          event.preventDefault();
+          var id = $(this).attr('href'),
+            top = $(id).offset().top;
+          $('body,html').animate({ scrollTop: top }, 1500);
+        });
+        $('#scroll-menu4').on('click', 'button', function (event) {
           event.preventDefault();
           var id = $(this).attr('href'),
             top = $(id).offset().top;
