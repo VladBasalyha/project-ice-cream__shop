@@ -7,6 +7,7 @@
 .header {
   background-color: #ffb8ca;
   border: none;
+  animation: header 750ms ease-in-out;
 
   @include mq(desktop) {
     padding-top: 37px;
@@ -132,6 +133,14 @@
   border: none;
   border-radius: 22px;
   cursor: pointer;
+  transition: all 250ms ease-in;
+  
+    &:hover,
+    &:focus {
+      box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+      animation: pulse 0.75s infinite;
+      transition: .25s;
+    }
 }
 
 .header-button__icon {
@@ -143,6 +152,8 @@
 .hero {
   background-color: #ffb8ca;
   border: none;
+
+  animation: header 750ms ease-in-out;
 
   @include mq(mobile-only) {
     overflow: hidden;
@@ -496,6 +507,14 @@
 
   color: #d41443;
   cursor: pointer;
+  transition: all 250ms ease-in;
+  
+    &:hover,
+    &:focus {
+      box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+      animation: pulse 0.75s infinite;
+      transition: .25s;
+    }
 
   @include mq(desktop) {
     font-size: 14px;
@@ -507,4 +526,12 @@
 .hero-button__acent {
   color: #fff;
   background-color: #d41443;
+  transition: all 250ms ease-in;
+  
+    &:hover,
+    &:focus {
+      box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+      animation: pulse 0.75s infinite;
+      transition: .25s;
+    }
 }
