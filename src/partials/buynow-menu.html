@@ -12,47 +12,152 @@
       <h2 class="menu__title">menu</h2>
       <ul class="menu__list">
         <li class="menu__item">
-          <picture></picture>
-          <div>
+          <picture>
+          <source
+            srcset="
+              ./images/basket/basket-tab-1-min.webp    1x,
+              ./images/basket/basket-tab-1-2x-min.webp 2x,
+              ./images/basket/basket-tab-1-3x-min.webp 3x
+            "
+            type="image/webp"
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/basket/basket-tab-1-min.png    1x,
+              ./images/basket/basket-tab-1-2x-min.png 2x,
+              ./images/basket/basket-tab-1-3x-min.png 3x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/basket/basket-mob-1-min.webp    1x,
+              ./images/basket/basket-mob-1-2x-min.webp 2x,
+              ./images/basket/basket-mob-1-3x-min.webp 3x
+            "
+            type="image/webp"
+            media="(min-width:320px)"
+          />
+          <source
+            srcset="
+              ./images/basket/basket-mob-1-min.png    1x,
+              ./images/basket/basket-mob-1-2x-min.png 2x,
+              ./images/basket/basket-mob-1-3x-min.png 3x
+            "
+            media="(min-width:320px)"
+          />
+          <img class="basket__image" src="./images/basket/basket-mob-1-min.png" alt="ice-cream" />
+        </picture>
+          <div class="buynow-menu__container">
             <p class="menu__text">Ice Cream</p>
-            <div>
-                <div id="counter">
+            <span class="counter-coin">5 USD</span>
+                <div class="counter-btns" id="counter">
                   <button type="button" data-action="decrement">-1</button>
                   <span id="value">0</span>
                   <button type="button" data-action="increment">+1</button>
                 </div>
-            <span>5 USD</span>
-          </div>
         </li>
         <li class="menu__item">
-          <picture></picture>
-          <div>
+          <picture>
+          <source
+            srcset="
+              ./images/basket/basket-tab-2-min.webp    1x,
+              ./images/basket/basket-tab-2-2x-min.webp 2x,
+              ./images/basket/basket-tab-2-3x-min.webp 3x
+            "
+            type="image/webp"
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/basket/basket-tab-2-min.png    1x,
+              ./images/basket/basket-tab-2-2x-min.png 2x,
+              ./images/basket/basket-tab-2-3x-min.png 3x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/basket/basket-mob-2-min.webp    1x,
+              ./images/basket/basket-mob-2-2x-min.webp 2x,
+              ./images/basket/basket-mob-2-3x-min.webp 3x
+            "
+            type="image/webp"
+            media="(min-width:320px)"
+          />
+          <source
+            srcset="
+              ./images/basket/basket-mob-2-min.png    1x,
+              ./images/basket/basket-mob-2-2x-min.png 2x,
+              ./images/basket/basket-mob-2-3x-min.png 3x
+            "
+            media="(min-width:320px)"
+          />
+          <img class="basket__image" src="./images/basket/basket-mob-2-min.png" alt="ice-cream" />
+        </picture>
+          <div class="buynow-menu__container">
             <p class="menu__text">Ice Coffee</p>
-                <div id="counter1">
+            <span class="counter-coin">7 USD</span>
+                <div class="counter-btns" id="counter1">
                   <button type="button" data-action="decrement1">-1</button>
                   <span id="value1">0</span>
                   <button type="button" data-action="increment1">+1</button>
                 </div>
-            <span>7 USD</span>
           </div>
         </li>
         <li class="menu__item">
-          <picture></picture>
-          <div>
+          <picture>
+          <source
+            srcset="
+              ./images/basket/basket-tab-3-min.webp    1x,
+              ./images/basket/basket-tab-3-2x-min.webp 2x,
+              ./images/basket/basket-tab-3-3x-min.webp 3x
+            "
+            type="image/webp"
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/basket/basket-tab-3-min.png    1x,
+              ./images/basket/basket-tab-3-2x-min.png 2x,
+              ./images/basket/basket-tab-3-3x-min.png 3x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/basket/basket-mob-3-min.webp    1x,
+              ./images/basket/basket-mob-3-2x-min.webp 2x,
+              ./images/basket/basket-mob-3-3x-min.webp 3x
+            "
+            type="image/webp"
+            media="(min-width:320px)"
+          />
+          <source
+            srcset="
+              ./images/basket/basket-mob-3-min.png    1x,
+              ./images/basket/basket-mob-3-2x-min.png 2x,
+              ./images/basket/basket-mob-3-3x-min.png 3x
+            "
+            media="(min-width:320px)"
+          />
+          <img class="basket__image" src="./images/basket/basket-mob-1-min.png" alt="ice-cream" />
+        </picture>
+          <div class="buynow-menu__container">
             <p class="menu__text">Milkchakes</p>
-                <div id="counter2">
+            <span class="counter-coin">10 USD</span>
+                <div class="counter-btns" id="counter2">
                   <button type="button" data-action="decrement2">-1</button>
                   <span id="value2">0</span>
                   <button type="button" data-action="increment2">+1</button>
                 </div>
-            <span>10 USD</span>
           </div>
         </li>
       </ul>
 
       <div>
-      <button type="submit" class="form-submit menu__btn--margin">
-        Buy <span id="value3">0</span> USD
+      <button type="submit" class="form-submit menu__btn--margin">Buy<span id="value3"> 0 </span>&dollar;
       </button>
       
       </div>
