@@ -2,11 +2,14 @@
 .header__container {
   display: flex;
   border: none;
+  
+  
 }
 
 .header {
   background-color: #ffb8ca;
   border: none;
+  animation: header 750ms ease-in-out;
 
   @include mq(desktop) {
     padding-top: 37px;
@@ -147,6 +150,7 @@
 .hero {
   background-color: #ffb8ca;
   border: none;
+  animation: header 750ms ease-in-out;
 
   @include mq(mobile-only) {
     overflow: hidden;
