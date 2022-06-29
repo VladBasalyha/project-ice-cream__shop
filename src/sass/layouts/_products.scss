@@ -174,9 +174,9 @@
   @include mq(tablet) {
     top: 200px;
     width: 90%;
-    height: 120px;
-    margin-left: 14px;
-    margin-right: 14px;
+    height: 160px;
+    margin-left: 11px;
+    margin-right: 11px;
   }
 
   @include mq(desktop) {
@@ -207,7 +207,7 @@
   }
 
   @include mq(tablet) {
-    padding-top: 45px;
+    padding-top: 65px;
 
     font-size: 27px;
   }
