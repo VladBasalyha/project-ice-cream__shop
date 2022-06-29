@@ -301,6 +301,17 @@
 }
 
 //Hero Right Thumb
+.right-thumb__image--shake{
+  animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: swing;
+  
+}
 .hero-thumb__item {
   @include mq(desktop) {
     &:nth-child(1) {
@@ -375,6 +386,7 @@
     right: -10px;
   }
 }
+
 
 //Hero Bottom Thumb
 .hero-thumb__paragraph {
