@@ -2,6 +2,7 @@
 .header__container {
   display: flex;
   border: none;
+  position: fixed;
 }
 
 .header {
@@ -139,9 +140,17 @@
 .hero {
   background-color: #ffb8ca;
   border: none;
+  @include mq(desktop) {
+    padding-top: 91px;
+  }
+
+  @include mq(tablet-only) {
+    padding-top: 86px;
+  }
 
   @include mq(mobile-only) {
     overflow: hidden;
+    padding-top: 62px;
   }
 }
 
