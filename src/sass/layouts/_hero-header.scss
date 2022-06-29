@@ -2,7 +2,6 @@
 .header__container {
   display: flex;
   border: none;
-  position: fixed;
 }
 
 .header {
@@ -20,6 +19,9 @@
 
   @include mq(mobile-only) {
     padding-top: 8px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
   }
 }
 
@@ -150,14 +152,8 @@
 .hero {
   background-color: #ffb8ca;
   border: none;
-  animation: header 750ms ease-in-out;
-  @include mq(desktop) {
-    padding-top: 91px;
-  }
 
-  @include mq(tablet-only) {
-    padding-top: 86px;
-  }
+  animation: header 750ms ease-in-out;
 
   @include mq(mobile-only) {
     overflow: hidden;
