@@ -1,3 +1,4 @@
+//модальне вікно Francise
 const modal = document.querySelector('.backdrop'); //modal form
 const openBtn = document.querySelector('.open-btn-modal'); //open button
 const closeBtn = document.querySelector('.close-btn-modal'); // close btn
@@ -13,44 +14,40 @@ function onCloseBtnClick () {
     modal.classList.add('is-hidden');
 }
 
-
+//відкриття та закриття мобільного вікна
 (() => {
-  const mobileMenu = document.querySelector('.js-menu-container');
-  const openMenuBtn = document.querySelector('.js-open-menu');
-  const closeMenuBtn = document.querySelector('.js-close-menu');
-
-  const toggleMenu = () => {
-    const isMenuOpen =
-    openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-    mobileMenu.classList.toggle('is-open');
-
-    const scrollLockMethod = !isMenuOpen
-      ? 'disableBodyScroll'
-      : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body);
+  const refs = {
+    openMenuBtn: document.querySelector('[data-menu-open]'),
+    closeMenuBtn: document.querySelector('[data-menu-close]'),
+    background: document.querySelector('[data-menu]'),
+    menu: document.querySelector('.mobile-menu'),
   };
 
-  openMenuBtn.addEventListener('click', toggleMenu);
-  closeMenuBtn.addEventListener('click', toggleMenu);
+  refs.openMenuBtn.addEventListener('click', toggleMenu);
+  refs.closeMenuBtn.addEventListener('click', toggleMenu);
 
-
-  // Закрываем мобильное меню на более широких экранах
-  // в случае изменения ориентации устройства.
-  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-    if (!e.matches) return;
-    mobileMenu.classList.remove('is-open');
-    openMenuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
-  });
+  function toggleMenu() {
+    refs.menu.classList.toggle('is-open');
+    refs.background.classList.toggle('is-open');
+    document.body.classList.toggle('menu-open');
+  }
 })();
 
-const mobileMenu = document.querySelector('.js-menu-container');
-  const closeMobileMenu = document.querySelector('.mobile-href');
+// відкриття та закриття мобільного вікна при натисненні на якірні посилання
 
-    closeMobileMenu.addEventListener('click', onMobileHrefClick);
+const mobileBox = document.querySelector('.mobile-menu');
+const mobileBoxBacground = document.querySelector('[data-menu]');
+const closeAnchor1 = document.querySelector('[data-menu-about]');
+const closeAnchor2 = document.querySelector('[data-menu-howismade]');
+const closeAnchor3 = document.querySelector('[data-menu-products]');
+const closeAnchor4 = document.querySelector('[data-menu-contacts]');
 
-function onMobileHrefClick() {
-    mobileMenu.classList.remove('is-open');  
-    mobileMenu.classList.add('is-hidden');
-  }
+closeAnchor1.addEventListener('click', onAnchorClick);
+closeAnchor2.addEventListener('click', onAnchorClick);
+closeAnchor3.addEventListener('click', onAnchorClick);
+closeAnchor4.addEventListener('click', onAnchorClick);
+
+function onAnchorClick() {
+  mobileBoxBacground.classList.remove('is-open');
+  mobileBox.classList.remove('is-open');
+}

@@ -1,6 +1,6 @@
-<header class="header">
+<header id="home" class="header">
   <div class="container header__container">
-    <nav class="site-nav">
+    <nav class="site-nav" id="scroll-menu">
       <a href="./" class="logo">
         <svg class="logo__icon" width="199" height="50">
           <use href="./images/sprite/sprite.svg#icon-logo"></use>
@@ -8,25 +8,31 @@
       </a>
       <ul class="site-nav__list">
         <li class="site-nav__item">
-          <a class="site-nav__link site-nav__link-acent" href="">Home</a>
+          <a class="site-nav__link site-nav__link-acent" href="#home">Home</a>
         </li>
         <li class="site-nav__item">
-          <a href="#about" class="site-nav__link" href="./#about">About us</a>
+          <a href="#about" class="site-nav__link">About us</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link" href="./#howismade">How it's made?</a>
+          <a class="site-nav__link" href="#howismade">How it's made?</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link" href="./#products">Our products</a>
+          <a class="site-nav__link" href="#products">Our products</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link" href="./#contacts">Contact</a>
+          <a class="site-nav__link" href="#contacts">Contact</a>
         </li>
       </ul>
     </nav>
     <ul class="header-button__list">
       <li class="header-button__item">
-        <button type="button" class="mobile-button__open js-open-menu">
+        <button
+          type="button"
+          class="mobile-button__open"
+          aria-controls="mob-menu"
+          aria-label="mobile menu switch"
+          data-menu-open
+        >
           <div class="mobile-button__icon"></div>
           <div class="mobile-button__icon"></div>
           <div class="mobile-button__icon"></div>
@@ -44,47 +50,48 @@
   </div>
 
   <!-- моб меню -->
-  <div class="mobile-menu js-menu-container">
-    <div class="mobile-menu__container" id="mobile-menu">
-      <button class="close-btn mobile-menu__close-btn js-close-menu">
-        <svg class="close-btn__icon">
-          <use href="./images/sprite/modals.svg#icon-close-mobile"></use>
-        </svg>
-      </button>
-      <button class="header-button header-button--mob">
-        Buy now
-        <svg class="header-button__icon" width="20px" height="20px">
-          <use href="./images/sprite/sprite.svg#icon-button"></use>
-        </svg>
-      </button>
+  <div class="mobile-backdrop" data-menu>
+    <div class="mobile-menu">
+      <div class="mobile-menu__container" id="mobile-menu">
+        <button
+          class="close-btn mobile-menu__close-btn mob-menu__btn-close"
+          type="button"
+          aria-label="mobile menu switch"
+          data-menu-close
+        >
+          <svg class="close-btn__icon">
+            <use href="./images/sprite/modals.svg#icon-close-mobile"></use>
+          </svg>
+        </button>
+        <button class="header-button header-button--mob">
+          Buy now
+          <svg class="header-button__icon" width="20px" height="20px">
+            <use href="./images/sprite/sprite.svg#icon-button"></use>
+          </svg>
+        </button>
 
-      <ul class="mobile-menu__site-nav">
-        <li class="mobile-menu__item">
-          <a
-            href="./index.html"
-            class="mobile-menu__link active-mobile mobile-href"
-            >Home</a
-          >
-        </li>
-        <li class="mobile-menu__item">
-          <a href="./#about" class="mobile-menu__link mobile-href">About us</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="./#howismade" class="mobile-menu__link mobile-href"
-            >How it’s made?</a
-          >
-        </li>
-        <li class="mobile-menu__item">
-          <a href="./#products" class="mobile-menu__link mobile-href"
-            >Our products</a
-          >
-        </li>
-        <li class="mobile-menu__item">
-          <a href="./#contacts" class="mobile-menu__link mobile-href"
-            >Contact</a
-          >
-        </li>
-      </ul>
+        <nav id="scroll-menu2">
+          <ul class="mobile-menu__site-nav" aria-label="mobile menu list">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link active-mobile"
+                >Home</a
+              >
+            </li>
+            <li class="mobile-menu__item" data-menu-about>
+              <a href="#about" class="mobile-menu__link">About us</a>
+            </li>
+            <li class="mobile-menu__item" data-menu-howismade>
+              <a href="#howismade" class="mobile-menu__link">How it’s made?</a>
+            </li>
+            <li class="mobile-menu__item" data-menu-products>
+              <a href="#products" class="mobile-menu__link">Our products</a>
+            </li>
+            <li class="mobile-menu__item" data-menu-contacts>
+              <a href="#contacts" class="mobile-menu__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
 </header>
