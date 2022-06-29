@@ -1,0 +1,46 @@
+.scene {
+  perspective: 600px;
+}
+
+.scene__wrapper {
+  position: relative;
+
+  transition: transform 1000ms;
+  transform-style: preserve-3d;
+
+  .scene:hover &,
+  .scene:focus & {
+    transform: rotateY(180deg);
+  }
+}
+
+// .product__list-card-btn:hover .scene__wrapper,
+// .product__list-card-btn:focus .scene__wrapper {
+//   transform: rotateY(180deg);
+// }
+
+.scene__face {
+  position: absolute;
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  &--back {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 20px 125px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+
+    color: #ffffff;
+
+    background-color: #ffb8ca;
+
+    transform: rotateY(180deg);
+  }
+}

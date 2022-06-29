@@ -137,6 +137,88 @@
     }
   }
 }
+
+.card__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__overlay {
+  position: absolute;
+  left: 0;
+  top: 250px;
+  width: 90%;
+  height: 155px;
+  margin-left: 11px;
+  margin-right: 11px;
+
+  border-radius: 25px;
+
+  text-align: center;
+  color: tomato;
+  background-color: white;
+
+  opacity: 0;
+
+  transform: translateY(100%);
+  transition: transform opacity;
+  transition-duration: 550ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .products__list-item:hover &,
+  .products__list-item:focus & {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  @include mq(tablet) {
+    top: 200px;
+    width: 90%;
+    height: 120px;
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+
+  @include mq(desktop) {
+    top: 250px;
+    width: 90%;
+    height: 90px;
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+}
+
+.card__description {
+  padding-top: 62px;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+
+  &--cream {
+    color: #ef6f8f;
+  }
+  &--coffee {
+    color: #e9be80;
+  }
+  &--milkshakes {
+    color: #87a55e;
+  }
+
+  @include mq(tablet) {
+    padding-top: 45px;
+
+    font-size: 27px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 32px;
+
+    font-size: 24px;
+  }
+}
+
 .product__list-card-text {
   margin-bottom: 32px;
 
@@ -149,21 +231,24 @@
 }
 
 .product__list-card-btn {
-  background-color: #fff;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   border: none;
+  margin: auto;
+
+  background-color: #fff;
 
   transition-property: transform;
   transition-duration: 500ms;
+
   &:hover,
   &:focus {
-    transform: scale(1.5) rotate(360deg);
+    transform: scale(1.5) rotate(270deg);
   }
 }
 
