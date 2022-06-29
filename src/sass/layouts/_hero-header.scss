@@ -7,6 +7,7 @@
 .header {
   background-color: #ffb8ca;
   border: none;
+  animation: header 750ms ease-in-out;
 
   @include mq(desktop) {
     padding-top: 37px;
@@ -18,6 +19,9 @@
 
   @include mq(mobile-only) {
     padding-top: 8px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
   }
 }
 
@@ -128,6 +132,15 @@
   background: #ffffff;
   border: none;
   border-radius: 22px;
+  cursor: pointer;
+  transition: all 250ms ease-in;
+  
+    &:hover,
+    &:focus {
+      box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+      animation: pulse 0.75s infinite;
+      transition: .25s;
+    }
 }
 
 .header-button__icon {
@@ -140,8 +153,11 @@
   background-color: #ffb8ca;
   border: none;
 
+  animation: header 750ms ease-in-out;
+
   @include mq(mobile-only) {
     overflow: hidden;
+    padding-top: 62px;
   }
 }
 
@@ -301,6 +317,17 @@
 }
 
 //Hero Right Thumb
+.right-thumb__image--shake{
+  animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: swing;
+  
+}
 .hero-thumb__item {
   @include mq(desktop) {
     &:nth-child(1) {
@@ -375,6 +402,7 @@
     right: -10px;
   }
 }
+
 
 //Hero Bottom Thumb
 .hero-thumb__paragraph {
@@ -479,6 +507,14 @@
 
   color: #d41443;
   cursor: pointer;
+  transition: all 250ms ease-in;
+  
+    &:hover,
+    &:focus {
+      box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+      animation: pulse 0.75s infinite;
+      transition: .25s;
+    }
 
   @include mq(desktop) {
     font-size: 14px;
@@ -490,4 +526,12 @@
 .hero-button__acent {
   color: #fff;
   background-color: #d41443;
+  transition: all 250ms ease-in;
+  
+    &:hover,
+    &:focus {
+      box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+      animation: pulse 0.75s infinite;
+      transition: .25s;
+    }
 }
