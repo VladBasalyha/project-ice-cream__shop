@@ -275,15 +275,5 @@
   transition-property: transform;
   transition-duration: 500ms;
 }
-.button-4 {
-  background-color: transparent;
-  border: 3px solid #ff0251;
-  color: #ff0251;
-  transition: .3s;
-}
 
-.button-4:hover {
-  animation: pulse 1s infinite;
-  transition: .3s;
-}
 
