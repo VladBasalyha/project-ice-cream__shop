@@ -1,50 +1,32 @@
 .gallery {
     align-items: center;
     min-width: 320px;
-    min-height: 136px + 60px;
+    min-height: 196px;
     padding-bottom: 60px;
     background: linear-gradient(to bottom,
-            #FFF5F6 18.85%,
-            #FFFFFF 18.85%,
+            #FFF5F6 13.15%,
+            #FFFFFF 13.15%,
             #FFFFFF 100%);
 
+
+
     @include mq(tablet) {
         min-width: 768px;
-        min-height: 327px + 60px;
+        min-height: 387px;
+        padding-bottom: 60px;
         background: linear-gradient(to bottom,
-                #FFF5F6 57.18%,
-                #FFFFFF 57.18%,
+                #FFF5F6 49.18%,
+                #FFFFFF 49.18%,
                 #FFFFFF 100%)
     }
 
     @include mq(desktop) {
         min-width: 1200px;
-        min-height: 430px + 120px;
+        min-height: 480px;
         padding-bottom: 120px;
-        // margin-bottom: 120px;
         background: linear-gradient(to bottom,
-                #FFF5F6 18.85%,
-                #FFFFFF 18.85%,
-                #FFFFFF 100%)
-    }
-
-    @include mq(tablet) {
-        min-width: 768px;
-        min-height: 327px + 60px;
-        background: linear-gradient(to bottom,
-                #FFF5F6 57.18%,
-                #FFFFFF 57.18%,
-                #FFFFFF 100%)
-    }
-
-    @include mq(desktop) {
-        min-width: 1200px;
-        min-height: 430px + 120px;
-        padding-bottom: 120px;
-        // margin-bottom: 120px;
-        background: linear-gradient(to bottom,
-                #FFF5F6 19.85%,
-                #FFFFFF 19.85%,
+                #FFF5F6 15.2%,
+                #FFFFFF 15.2%,
                 #FFFFFF 100%)
     }
 }
