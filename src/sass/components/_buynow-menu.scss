@@ -28,7 +28,8 @@
 .menu {
   position: absolute;
   width: 95%;
-  height: auto;
+  height: 95%;
+  overflow: scroll;
   background-color: #ffffff;
   top: 50%;
   left: 50%;
