@@ -1,8 +1,8 @@
 .gallery {
     align-items: center;
     min-width: 320px;
-    min-height: 136px;
-    margin-bottom: 60px;
+    min-height: 136px + 60px;
+    padding-bottom: 60px;
     background: linear-gradient(to bottom,
             #FFF5F6 18.85%,
             #FFFFFF 18.85%,
@@ -10,7 +10,7 @@
 
     @include mq(tablet) {
         min-width: 768px;
-        min-height: 327px;
+        min-height: 327px + 60px;
         background: linear-gradient(to bottom,
                 #FFF5F6 57.18%,
                 #FFFFFF 57.18%,
@@ -19,32 +19,33 @@
 
     @include mq(desktop) {
         min-width: 1200px;
-        min-height: 430px;
-        margin-bottom: 120px;
+        min-height: 430px + 86px;
+        padding-bottom: 86px;
+        // margin-bottom: 120px;
         background: linear-gradient(to bottom,
                 #FFF5F6 18.85%,
                 #FFFFFF 18.85%,
                 #FFFFFF 100%)
     }
 
-    @include mq(tablet) {
-        min-width: 768px;
-        min-height: 327px;
-        background: linear-gradient(to bottom,
-                #FFF5F6 57.18%,
-                #FFFFFF 57.18%,
-                #FFFFFF 100%)
-    }
+    // @include mq(tablet) {
+    //     min-width: 768px;
+    //     min-height: 327px;
+    //     background: linear-gradient(to bottom,
+    //             #FFF5F6 57.18%,
+    //             #FFFFFF 57.18%,
+    //             #FFFFFF 100%)
+    // }
 
-    @include mq(desktop) {
-        min-width: 1200px;
-        min-height: 430px;
-        margin-bottom: 120px;
-        background: linear-gradient(to bottom,
-                #FFF5F6 19.85%,
-                #FFFFFF 19.85%,
-                #FFFFFF 100%)
-    }
+    // @include mq(desktop) {
+    //     min-width: 1200px;
+    //     min-height: 430px;
+    //     margin-bottom: 120px;
+    //     background: linear-gradient(to bottom,
+    //             #FFF5F6 19.85%,
+    //             #FFFFFF 19.85%,
+    //             #FFFFFF 100%)
+    // }
 }
 
 .gallery__h {
