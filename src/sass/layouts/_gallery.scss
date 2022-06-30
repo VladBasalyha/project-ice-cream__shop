@@ -88,14 +88,14 @@
 .gallery__photo {
     background-size: contain;
     grid-area: auto;
-    cursor: pointer;
+    
 
 }
 
 
 .gallery__photo--first {
     grid-area: 9 / 1 / span 7 / span 1;
-    cursor: pointer;
+    
     animation-name: Appearance;
     animation-duration: 2s;
     animation-direction: alternate-reverse;

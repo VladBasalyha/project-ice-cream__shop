@@ -7,7 +7,7 @@
 .header {
   background-color: #ffb8ca;
   border: none;
-  animation: header 750ms ease-in-out;
+  animation: header 1500ms ease-in-out;
 
   @include mq(desktop) {
     padding-top: 37px;
@@ -153,7 +153,7 @@
   background-color: #ffb8ca;
   border: none;
 
-  animation: header 750ms ease-in-out;
+  animation: header 1500ms ease-in-out;
 
   @include mq(mobile-only) {
     overflow: hidden;
