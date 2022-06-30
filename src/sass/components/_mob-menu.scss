@@ -149,6 +149,9 @@
     background-color: yellow;
   }
 }
+.button-up {
+  display: none;
+}
 
 @media screen and (min-width: 1200px) {
   .donate-btn {
@@ -185,27 +188,6 @@
   }
 }
 
-.button-up {
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  z-index: 5;
-  width: 64px;
-  height: 64px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  fill: #d41443;
-  background-color: #ffb8ca;
-  border-radius: 50%;
-
-  &:hover,
-  &:focus {
-    background-color: #ecebeb;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .mobile-menu {
     width: 50%;
@@ -234,5 +216,26 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+  }
+
+  .button-up {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 5;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    fill: #d41443;
+    background-color: #ffb8ca;
+    border-radius: 50%;
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
   }
 }
