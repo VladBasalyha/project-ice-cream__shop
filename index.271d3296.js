@@ -1,0 +1,2 @@
+const e=document.querySelector(".backdrop-mobile"),t=document.querySelector(".open-btn-mobile"),n=document.querySelector(".close-btn-mobile"),c=document.querySelector("[data-menu-btn]");function d(){e.classList.remove("is-hidden")}t.addEventListener("click",d),n.addEventListener("click",(function(){e.classList.add("is-hidden")})),c.addEventListener("click",d);
+//# sourceMappingURL=index.271d3296.js.map
