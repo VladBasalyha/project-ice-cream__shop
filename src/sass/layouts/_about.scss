@@ -46,8 +46,8 @@
     padding-left: 32px;
   }
 
-  @media screen and (min-width:1200px) {
-    width: 100%;
+  @media screen and (min-width:1200px) and (max-width:8000px) {
+    width: 1168px;
     padding-right: 16px;
     padding-left: 16px;
     background-image: url('../images/images2/desk-bcg-milk-1x_left.png'), url('../images/images2/desk-bcg-milk-1x_right.png');
@@ -64,6 +64,7 @@
       background-size: 180px, 280px;
     }
   }
+
 }
  
 .about {
