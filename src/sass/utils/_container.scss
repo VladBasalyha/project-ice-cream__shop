@@ -82,3 +82,10 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.label {
+  font-size: 18px;
+  line-height: 1.17;
+  color: $subAccentColor;
+  text-transform: uppercase;
+}

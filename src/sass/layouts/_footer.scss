@@ -29,10 +29,10 @@
     }
 
     & .label {
-        font-size: 18px;
-        line-height: 1.17;
+        // font-size: 18px;
+        // line-height: 1.17;
+        // color: $subAccentColor;
         margin-bottom: 16px;
-        color: $subAccentColor;
         max-width: 232px;
 
         @media screen and (min-width: 768px) {
